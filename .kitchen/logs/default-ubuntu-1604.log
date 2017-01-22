@@ -1,0 +1,416 @@
+I, [2017-01-22T07:53:47.430674 #16203]  INFO -- default-ubuntu-1604: -----> Converging <default-ubuntu-1604>...
+I, [2017-01-22T07:53:47.431534 #16203]  INFO -- default-ubuntu-1604: Preparing files for transfer
+I, [2017-01-22T07:53:47.431637 #16203]  INFO -- default-ubuntu-1604: Preparing dna.json
+I, [2017-01-22T07:53:47.432114 #16203]  INFO -- default-ubuntu-1604: Resolving cookbook dependencies with Berkshelf 5.2.0...
+I, [2017-01-22T07:53:49.733425 #16203]  INFO -- default-ubuntu-1604: Removing non-cookbook files before transfer
+I, [2017-01-22T07:53:49.747807 #16203]  INFO -- default-ubuntu-1604: Preparing validation.pem
+I, [2017-01-22T07:53:49.748463 #16203]  INFO -- default-ubuntu-1604: Preparing client.rb
+I, [2017-01-22T07:53:49.892339 #16203]  INFO -- default-ubuntu-1604: -----> Chef Omnibus installation detected (install only if missing)
+I, [2017-01-22T07:53:49.909032 #16203]  INFO -- default-ubuntu-1604: Transferring files to <default-ubuntu-1604>
+I, [2017-01-22T07:53:51.781725 #16203]  INFO -- default-ubuntu-1604: Starting Chef Client, version 12.17.44
+I, [2017-01-22T07:53:53.269058 #16203]  INFO -- default-ubuntu-1604: resolving cookbooks for run list: ["learn_chef_apache2::default"]
+I, [2017-01-22T07:53:53.349676 #16203]  INFO -- default-ubuntu-1604: Synchronizing Cookbooks:
+I, [2017-01-22T07:53:53.352758 #16203]  INFO -- default-ubuntu-1604:   - learn_chef_apache2 (0.2.1)
+I, [2017-01-22T07:53:53.353216 #16203]  INFO -- default-ubuntu-1604: Installing Cookbook Gems:
+I, [2017-01-22T07:53:53.353744 #16203]  INFO -- default-ubuntu-1604: Compiling Cookbooks...
+I, [2017-01-22T07:53:53.357712 #16203]  INFO -- default-ubuntu-1604: Converging 6 resources
+I, [2017-01-22T07:53:53.358216 #16203]  INFO -- default-ubuntu-1604: Recipe: learn_chef_apache2::default
+I, [2017-01-22T07:53:53.359513 #16203]  INFO -- default-ubuntu-1604:   * apt_update[Update the apt cache daily] action periodic (up to date)
+I, [2017-01-22T07:53:53.423591 #16203]  INFO -- default-ubuntu-1604:   * apt_package[apache2] action install (up to date)
+I, [2017-01-22T07:53:53.578360 #16203]  INFO -- default-ubuntu-1604:   * service[apache2] action enable (up to date)
+I, [2017-01-22T07:53:53.713628 #16203]  INFO -- default-ubuntu-1604:   * service[apache2] action start (up to date)
+I, [2017-01-22T07:53:53.716726 #16203]  INFO -- default-ubuntu-1604:   * group[web_admin] action create (up to date)
+I, [2017-01-22T07:53:53.718928 #16203]  INFO -- default-ubuntu-1604:   * linux_user[web_admin] action create (up to date)
+I, [2017-01-22T07:53:53.729097 #16203]  INFO -- default-ubuntu-1604:   * template[/var/www/html/index.html] action create
+I, [2017-01-22T07:53:53.729564 #16203]  INFO -- default-ubuntu-1604:     - update content in file /var/www/html/index.html from ac5fd7 to 2fbf2b
+I, [2017-01-22T07:53:53.730109 #16203]  INFO -- default-ubuntu-1604:     --- /var/www/html/index.html	2017-01-22 15:31:07.303139054 +0000
+I, [2017-01-22T07:53:53.730789 #16203]  INFO -- default-ubuntu-1604:     +++ /var/www/html/.chef-index20170122-13258-18gw69d.html	2017-01-22 15:53:53.329792000 +0000
+I, [2017-01-22T07:53:53.731209 #16203]  INFO -- default-ubuntu-1604:     @@ -1,376 +1,8 @@
+I, [2017-01-22T07:53:53.731625 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.732092 #16203]  INFO -- default-ubuntu-1604:     -<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+I, [2017-01-22T07:53:53.732470 #16203]  INFO -- default-ubuntu-1604:     -<html xmlns="http://www.w3.org/1999/xhtml">
+I, [2017-01-22T07:53:53.732726 #16203]  INFO -- default-ubuntu-1604:     -  <!--
+I, [2017-01-22T07:53:53.733030 #16203]  INFO -- default-ubuntu-1604:     -    Modified from the Debian original for Ubuntu
+I, [2017-01-22T07:53:53.733553 #16203]  INFO -- default-ubuntu-1604:     -    Last updated: 2014-03-19
+I, [2017-01-22T07:53:53.733890 #16203]  INFO -- default-ubuntu-1604:     -    See: https://launchpad.net/bugs/1288690
+I, [2017-01-22T07:53:53.734047 #16203]  INFO -- default-ubuntu-1604:     -  -->
+I, [2017-01-22T07:53:53.734327 #16203]  INFO -- default-ubuntu-1604:     -  <head>
+I, [2017-01-22T07:53:53.734376 #16203]  INFO -- default-ubuntu-1604:     -    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+I, [2017-01-22T07:53:53.734402 #16203]  INFO -- default-ubuntu-1604:     -    <title>Apache2 Ubuntu Default Page: It works</title>
+I, [2017-01-22T07:53:53.734422 #16203]  INFO -- default-ubuntu-1604:     -    <style type="text/css" media="screen">
+I, [2017-01-22T07:53:53.734692 #16203]  INFO -- default-ubuntu-1604:     -  * {
+I, [2017-01-22T07:53:53.734722 #16203]  INFO -- default-ubuntu-1604:     -    margin: 0px 0px 0px 0px;
+I, [2017-01-22T07:53:53.734740 #16203]  INFO -- default-ubuntu-1604:     -    padding: 0px 0px 0px 0px;
+I, [2017-01-22T07:53:53.734755 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.734767 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.735015 #16203]  INFO -- default-ubuntu-1604:     -  body, html {
+I, [2017-01-22T07:53:53.735043 #16203]  INFO -- default-ubuntu-1604:     -    padding: 3px 3px 3px 3px;
+I, [2017-01-22T07:53:53.735059 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.735073 #16203]  INFO -- default-ubuntu-1604:     -    background-color: #D8DBE2;
+I, [2017-01-22T07:53:53.735343 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.735370 #16203]  INFO -- default-ubuntu-1604:     -    font-family: Verdana, sans-serif;
+I, [2017-01-22T07:53:53.735386 #16203]  INFO -- default-ubuntu-1604:     -    font-size: 11pt;
+I, [2017-01-22T07:53:53.735400 #16203]  INFO -- default-ubuntu-1604:     -    text-align: center;
+I, [2017-01-22T07:53:53.735412 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.735425 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.735438 #16203]  INFO -- default-ubuntu-1604:     -  div.main_page {
+I, [2017-01-22T07:53:53.735450 #16203]  INFO -- default-ubuntu-1604:     -    position: relative;
+I, [2017-01-22T07:53:53.735462 #16203]  INFO -- default-ubuntu-1604:     -    display: table;
+I, [2017-01-22T07:53:53.735656 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.735800 #16203]  INFO -- default-ubuntu-1604:     -    width: 800px;
+I, [2017-01-22T07:53:53.735824 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.735839 #16203]  INFO -- default-ubuntu-1604:     -    margin-bottom: 3px;
+I, [2017-01-22T07:53:53.736026 #16203]  INFO -- default-ubuntu-1604:     -    margin-left: auto;
+I, [2017-01-22T07:53:53.736050 #16203]  INFO -- default-ubuntu-1604:     -    margin-right: auto;
+I, [2017-01-22T07:53:53.736064 #16203]  INFO -- default-ubuntu-1604:     -    padding: 0px 0px 0px 0px;
+I, [2017-01-22T07:53:53.736077 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.736089 #16203]  INFO -- default-ubuntu-1604:     -    border-width: 2px;
+I, [2017-01-22T07:53:53.736104 #16203]  INFO -- default-ubuntu-1604:     -    border-color: #212738;
+I, [2017-01-22T07:53:53.736274 #16203]  INFO -- default-ubuntu-1604:     -    border-style: solid;
+I, [2017-01-22T07:53:53.736306 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.736329 #16203]  INFO -- default-ubuntu-1604:     -    background-color: #FFFFFF;
+I, [2017-01-22T07:53:53.736472 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.736493 #16203]  INFO -- default-ubuntu-1604:     -    text-align: center;
+I, [2017-01-22T07:53:53.736507 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.736520 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.736532 #16203]  INFO -- default-ubuntu-1604:     -  div.page_header {
+I, [2017-01-22T07:53:53.736544 #16203]  INFO -- default-ubuntu-1604:     -    height: 99px;
+I, [2017-01-22T07:53:53.736728 #16203]  INFO -- default-ubuntu-1604:     -    width: 100%;
+I, [2017-01-22T07:53:53.736750 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.736764 #16203]  INFO -- default-ubuntu-1604:     -    background-color: #F5F6F7;
+I, [2017-01-22T07:53:53.736777 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.736957 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.736980 #16203]  INFO -- default-ubuntu-1604:     -  div.page_header span {
+I, [2017-01-22T07:53:53.736995 #16203]  INFO -- default-ubuntu-1604:     -    margin: 15px 0px 0px 50px;
+I, [2017-01-22T07:53:53.737008 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.737024 #16203]  INFO -- default-ubuntu-1604:     -    font-size: 180%;
+I, [2017-01-22T07:53:53.738142 #16203]  INFO -- default-ubuntu-1604:     -    font-weight: bold;
+I, [2017-01-22T07:53:53.738183 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.738207 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.738223 #16203]  INFO -- default-ubuntu-1604:     -  div.page_header img {
+I, [2017-01-22T07:53:53.738236 #16203]  INFO -- default-ubuntu-1604:     -    margin: 3px 0px 0px 40px;
+I, [2017-01-22T07:53:53.738248 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.738261 #16203]  INFO -- default-ubuntu-1604:     -    border: 0px 0px 0px;
+I, [2017-01-22T07:53:53.738273 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.738285 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.738296 #16203]  INFO -- default-ubuntu-1604:     -  div.table_of_contents {
+I, [2017-01-22T07:53:53.738607 #16203]  INFO -- default-ubuntu-1604:     -    clear: left;
+I, [2017-01-22T07:53:53.738635 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.738656 #16203]  INFO -- default-ubuntu-1604:     -    min-width: 200px;
+I, [2017-01-22T07:53:53.738903 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.738930 #16203]  INFO -- default-ubuntu-1604:     -    margin: 3px 3px 3px 3px;
+I, [2017-01-22T07:53:53.738947 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.738962 #16203]  INFO -- default-ubuntu-1604:     -    background-color: #FFFFFF;
+I, [2017-01-22T07:53:53.738984 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.739011 #16203]  INFO -- default-ubuntu-1604:     -    text-align: left;
+I, [2017-01-22T07:53:53.739028 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.739353 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.739379 #16203]  INFO -- default-ubuntu-1604:     -  div.table_of_contents_item {
+I, [2017-01-22T07:53:53.739394 #16203]  INFO -- default-ubuntu-1604:     -    clear: left;
+I, [2017-01-22T07:53:53.739406 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.739418 #16203]  INFO -- default-ubuntu-1604:     -    width: 100%;
+I, [2017-01-22T07:53:53.739430 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.739442 #16203]  INFO -- default-ubuntu-1604:     -    margin: 4px 0px 0px 0px;
+I, [2017-01-22T07:53:53.739454 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.739466 #16203]  INFO -- default-ubuntu-1604:     -    background-color: #FFFFFF;
+I, [2017-01-22T07:53:53.739477 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.739494 #16203]  INFO -- default-ubuntu-1604:     -    color: #000000;
+I, [2017-01-22T07:53:53.739776 #16203]  INFO -- default-ubuntu-1604:     -    text-align: left;
+I, [2017-01-22T07:53:53.739804 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.739831 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.739852 #16203]  INFO -- default-ubuntu-1604:     -  div.table_of_contents_item a {
+I, [2017-01-22T07:53:53.740118 #16203]  INFO -- default-ubuntu-1604:     -    margin: 6px 0px 0px 6px;
+I, [2017-01-22T07:53:53.740145 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.740169 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.740185 #16203]  INFO -- default-ubuntu-1604:     -  div.content_section {
+I, [2017-01-22T07:53:53.740198 #16203]  INFO -- default-ubuntu-1604:     -    margin: 3px 3px 3px 3px;
+I, [2017-01-22T07:53:53.740216 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.740259 #16203]  INFO -- default-ubuntu-1604:     -    background-color: #FFFFFF;
+I, [2017-01-22T07:53:53.740275 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.740287 #16203]  INFO -- default-ubuntu-1604:     -    text-align: left;
+I, [2017-01-22T07:53:53.740299 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.740310 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.740692 #16203]  INFO -- default-ubuntu-1604:     -  div.content_section_text {
+I, [2017-01-22T07:53:53.740745 #16203]  INFO -- default-ubuntu-1604:     -    padding: 4px 8px 4px 8px;
+I, [2017-01-22T07:53:53.740767 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.740782 #16203]  INFO -- default-ubuntu-1604:     -    color: #000000;
+I, [2017-01-22T07:53:53.741110 #16203]  INFO -- default-ubuntu-1604:     -    font-size: 100%;
+I, [2017-01-22T07:53:53.741137 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.741153 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.741166 #16203]  INFO -- default-ubuntu-1604:     -  div.content_section_text pre {
+I, [2017-01-22T07:53:53.741179 #16203]  INFO -- default-ubuntu-1604:     -    margin: 8px 0px 8px 0px;
+I, [2017-01-22T07:53:53.741192 #16203]  INFO -- default-ubuntu-1604:     -    padding: 8px 8px 8px 8px;
+I, [2017-01-22T07:53:53.741204 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.741217 #16203]  INFO -- default-ubuntu-1604:     -    border-width: 1px;
+I, [2017-01-22T07:53:53.741229 #16203]  INFO -- default-ubuntu-1604:     -    border-style: dotted;
+I, [2017-01-22T07:53:53.741558 #16203]  INFO -- default-ubuntu-1604:     -    border-color: #000000;
+I, [2017-01-22T07:53:53.741586 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.741602 #16203]  INFO -- default-ubuntu-1604:     -    background-color: #F5F6F7;
+I, [2017-01-22T07:53:53.741615 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.741628 #16203]  INFO -- default-ubuntu-1604:     -    font-style: italic;
+I, [2017-01-22T07:53:53.741640 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.741652 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.741953 #16203]  INFO -- default-ubuntu-1604:     -  div.content_section_text p {
+I, [2017-01-22T07:53:53.741997 #16203]  INFO -- default-ubuntu-1604:     -    margin-bottom: 6px;
+I, [2017-01-22T07:53:53.742237 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.742264 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.742279 #16203]  INFO -- default-ubuntu-1604:     -  div.content_section_text ul, div.content_section_text li {
+I, [2017-01-22T07:53:53.742518 #16203]  INFO -- default-ubuntu-1604:     -    padding: 4px 8px 4px 16px;
+I, [2017-01-22T07:53:53.742565 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.742600 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.742616 #16203]  INFO -- default-ubuntu-1604:     -  div.section_header {
+I, [2017-01-22T07:53:53.742630 #16203]  INFO -- default-ubuntu-1604:     -    padding: 3px 6px 3px 6px;
+I, [2017-01-22T07:53:53.742644 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.742657 #16203]  INFO -- default-ubuntu-1604:     -    background-color: #8E9CB2;
+I, [2017-01-22T07:53:53.742670 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.742683 #16203]  INFO -- default-ubuntu-1604:     -    color: #FFFFFF;
+I, [2017-01-22T07:53:53.742947 #16203]  INFO -- default-ubuntu-1604:     -    font-weight: bold;
+I, [2017-01-22T07:53:53.742972 #16203]  INFO -- default-ubuntu-1604:     -    font-size: 112%;
+I, [2017-01-22T07:53:53.742988 #16203]  INFO -- default-ubuntu-1604:     -    text-align: center;
+I, [2017-01-22T07:53:53.743101 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.743332 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.743357 #16203]  INFO -- default-ubuntu-1604:     -  div.section_header_red {
+I, [2017-01-22T07:53:53.743373 #16203]  INFO -- default-ubuntu-1604:     -    background-color: #CD214F;
+I, [2017-01-22T07:53:53.743404 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.743419 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.743431 #16203]  INFO -- default-ubuntu-1604:     -  div.section_header_grey {
+I, [2017-01-22T07:53:53.743444 #16203]  INFO -- default-ubuntu-1604:     -    background-color: #9F9386;
+I, [2017-01-22T07:53:53.743764 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.743792 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.743984 #16203]  INFO -- default-ubuntu-1604:     -  .floating_element {
+I, [2017-01-22T07:53:53.744013 #16203]  INFO -- default-ubuntu-1604:     -    position: relative;
+I, [2017-01-22T07:53:53.744029 #16203]  INFO -- default-ubuntu-1604:     -    float: left;
+I, [2017-01-22T07:53:53.744206 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.744230 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.744245 #16203]  INFO -- default-ubuntu-1604:     -  div.table_of_contents_item a,
+I, [2017-01-22T07:53:53.744259 #16203]  INFO -- default-ubuntu-1604:     -  div.content_section_text a {
+I, [2017-01-22T07:53:53.744474 #16203]  INFO -- default-ubuntu-1604:     -    text-decoration: none;
+I, [2017-01-22T07:53:53.744500 #16203]  INFO -- default-ubuntu-1604:     -    font-weight: bold;
+I, [2017-01-22T07:53:53.744516 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.744532 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.744814 #16203]  INFO -- default-ubuntu-1604:     -  div.table_of_contents_item a:link,
+I, [2017-01-22T07:53:53.744869 #16203]  INFO -- default-ubuntu-1604:     -  div.table_of_contents_item a:visited,
+I, [2017-01-22T07:53:53.744890 #16203]  INFO -- default-ubuntu-1604:     -  div.table_of_contents_item a:active {
+I, [2017-01-22T07:53:53.744905 #16203]  INFO -- default-ubuntu-1604:     -    color: #000000;
+I, [2017-01-22T07:53:53.744917 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.744929 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.744941 #16203]  INFO -- default-ubuntu-1604:     -  div.table_of_contents_item a:hover {
+I, [2017-01-22T07:53:53.744954 #16203]  INFO -- default-ubuntu-1604:     -    background-color: #000000;
+I, [2017-01-22T07:53:53.745188 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.745217 #16203]  INFO -- default-ubuntu-1604:     -    color: #FFFFFF;
+I, [2017-01-22T07:53:53.745233 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.745246 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.745525 #16203]  INFO -- default-ubuntu-1604:     -  div.content_section_text a:link,
+I, [2017-01-22T07:53:53.745550 #16203]  INFO -- default-ubuntu-1604:     -  div.content_section_text a:visited,
+I, [2017-01-22T07:53:53.745566 #16203]  INFO -- default-ubuntu-1604:     -   div.content_section_text a:active {
+I, [2017-01-22T07:53:53.745584 #16203]  INFO -- default-ubuntu-1604:     -    background-color: #DCDFE6;
+I, [2017-01-22T07:53:53.745603 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.745625 #16203]  INFO -- default-ubuntu-1604:     -    color: #000000;
+I, [2017-01-22T07:53:53.745640 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.745652 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.745936 #16203]  INFO -- default-ubuntu-1604:     -  div.content_section_text a:hover {
+I, [2017-01-22T07:53:53.745962 #16203]  INFO -- default-ubuntu-1604:     -    background-color: #000000;
+I, [2017-01-22T07:53:53.745987 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.746013 #16203]  INFO -- default-ubuntu-1604:     -    color: #DCDFE6;
+I, [2017-01-22T07:53:53.746030 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.746042 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.746054 #16203]  INFO -- default-ubuntu-1604:     -  div.validator {
+I, [2017-01-22T07:53:53.746079 #16203]  INFO -- default-ubuntu-1604:     -  }
+I, [2017-01-22T07:53:53.746361 #16203]  INFO -- default-ubuntu-1604:     -    </style>
+I, [2017-01-22T07:53:53.746385 #16203]  INFO -- default-ubuntu-1604:     -  </head>
+I, [2017-01-22T07:53:53.746399 #16203]  INFO -- default-ubuntu-1604:     -  <body>
+I, [2017-01-22T07:53:53.746412 #16203]  INFO -- default-ubuntu-1604:     -    <div class="main_page">
+I, [2017-01-22T07:53:53.746425 #16203]  INFO -- default-ubuntu-1604:     -      <div class="page_header floating_element">
+I, [2017-01-22T07:53:53.746439 #16203]  INFO -- default-ubuntu-1604:     -        <img src="/icons/ubuntu-logo.png" alt="Ubuntu Logo" class="floating_element"/>
+I, [2017-01-22T07:53:53.746789 #16203]  INFO -- default-ubuntu-1604:     -        <span class="floating_element">
+I, [2017-01-22T07:53:53.746815 #16203]  INFO -- default-ubuntu-1604:     -          Apache2 Ubuntu Default Page
+I, [2017-01-22T07:53:53.746830 #16203]  INFO -- default-ubuntu-1604:     -        </span>
+I, [2017-01-22T07:53:53.746844 #16203]  INFO -- default-ubuntu-1604:     -      </div>
+I, [2017-01-22T07:53:53.746857 #16203]  INFO -- default-ubuntu-1604:     -<!--      <div class="table_of_contents floating_element">
+I, [2017-01-22T07:53:53.747080 #16203]  INFO -- default-ubuntu-1604:     -        <div class="section_header section_header_grey">
+I, [2017-01-22T07:53:53.747110 #16203]  INFO -- default-ubuntu-1604:     -          TABLE OF CONTENTS
+I, [2017-01-22T07:53:53.747413 #16203]  INFO -- default-ubuntu-1604:     -        </div>
+I, [2017-01-22T07:53:53.747449 #16203]  INFO -- default-ubuntu-1604:     -        <div class="table_of_contents_item floating_element">
+I, [2017-01-22T07:53:53.747471 #16203]  INFO -- default-ubuntu-1604:     -          <a href="#about">About</a>
+I, [2017-01-22T07:53:53.747486 #16203]  INFO -- default-ubuntu-1604:     -        </div>
+I, [2017-01-22T07:53:53.747499 #16203]  INFO -- default-ubuntu-1604:     -        <div class="table_of_contents_item floating_element">
+I, [2017-01-22T07:53:53.747513 #16203]  INFO -- default-ubuntu-1604:     -          <a href="#changes">Changes</a>
+I, [2017-01-22T07:53:53.747525 #16203]  INFO -- default-ubuntu-1604:     -        </div>
+I, [2017-01-22T07:53:53.747537 #16203]  INFO -- default-ubuntu-1604:     -        <div class="table_of_contents_item floating_element">
+I, [2017-01-22T07:53:53.747928 #16203]  INFO -- default-ubuntu-1604:     -          <a href="#scope">Scope</a>
+I, [2017-01-22T07:53:53.747990 #16203]  INFO -- default-ubuntu-1604:     -        </div>
+I, [2017-01-22T07:53:53.748021 #16203]  INFO -- default-ubuntu-1604:     -        <div class="table_of_contents_item floating_element">
+I, [2017-01-22T07:53:53.748047 #16203]  INFO -- default-ubuntu-1604:     -          <a href="#files">Config files</a>
+I, [2017-01-22T07:53:53.748072 #16203]  INFO -- default-ubuntu-1604:     -        </div>
+I, [2017-01-22T07:53:53.748096 #16203]  INFO -- default-ubuntu-1604:     -      </div>
+I, [2017-01-22T07:53:53.748222 #16203]  INFO -- default-ubuntu-1604:     --->
+I, [2017-01-22T07:53:53.748672 #16203]  INFO -- default-ubuntu-1604:     -      <div class="content_section floating_element">
+I, [2017-01-22T07:53:53.748717 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.748748 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.748787 #16203]  INFO -- default-ubuntu-1604:     -        <div class="section_header section_header_red">
+I, [2017-01-22T07:53:53.748819 #16203]  INFO -- default-ubuntu-1604:     -          <div id="about"></div>
+I, [2017-01-22T07:53:53.748850 #16203]  INFO -- default-ubuntu-1604:     -          It works!
+I, [2017-01-22T07:53:53.748879 #16203]  INFO -- default-ubuntu-1604:     -        </div>
+I, [2017-01-22T07:53:53.748919 #16203]  INFO -- default-ubuntu-1604:     -        <div class="content_section_text">
+I, [2017-01-22T07:53:53.748946 #16203]  INFO -- default-ubuntu-1604:     -          <p>
+I, [2017-01-22T07:53:53.748974 #16203]  INFO -- default-ubuntu-1604:     -                This is the default welcome page used to test the correct 
+I, [2017-01-22T07:53:53.749022 #16203]  INFO -- default-ubuntu-1604:     -                operation of the Apache2 server after installation on Ubuntu systems.
+I, [2017-01-22T07:53:53.749054 #16203]  INFO -- default-ubuntu-1604:     -                It is based on the equivalent page on Debian, from which the Ubuntu Apache
+I, [2017-01-22T07:53:53.749080 #16203]  INFO -- default-ubuntu-1604:     -                packaging is derived.
+I, [2017-01-22T07:53:53.749513 #16203]  INFO -- default-ubuntu-1604:     -                If you can read this page, it means that the Apache HTTP server installed at
+I, [2017-01-22T07:53:53.749548 #16203]  INFO -- default-ubuntu-1604:     -                this site is working properly. You should <b>replace this file</b> (located at
+I, [2017-01-22T07:53:53.749567 #16203]  INFO -- default-ubuntu-1604:     -                <tt>/var/www/html/index.html</tt>) before continuing to operate your HTTP server.
+I, [2017-01-22T07:53:53.749751 #16203]  INFO -- default-ubuntu-1604:     -          </p>
+I, [2017-01-22T07:53:53.749782 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.749799 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.750007 #16203]  INFO -- default-ubuntu-1604:     -          <p>
+I, [2017-01-22T07:53:53.750033 #16203]  INFO -- default-ubuntu-1604:     -                If you are a normal user of this web site and don't know what this page is
+I, [2017-01-22T07:53:53.750051 #16203]  INFO -- default-ubuntu-1604:     -                about, this probably means that the site is currently unavailable due to
+I, [2017-01-22T07:53:53.750066 #16203]  INFO -- default-ubuntu-1604:     -                maintenance.
+I, [2017-01-22T07:53:53.750265 #16203]  INFO -- default-ubuntu-1604:     -                If the problem persists, please contact the site's administrator.
+I, [2017-01-22T07:53:53.750293 #16203]  INFO -- default-ubuntu-1604:     -          </p>
+I, [2017-01-22T07:53:53.750308 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.750322 #16203]  INFO -- default-ubuntu-1604:     -        </div>
+I, [2017-01-22T07:53:53.750335 #16203]  INFO -- default-ubuntu-1604:     -        <div class="section_header">
+I, [2017-01-22T07:53:53.750605 #16203]  INFO -- default-ubuntu-1604:     -          <div id="changes"></div>
+I, [2017-01-22T07:53:53.750638 #16203]  INFO -- default-ubuntu-1604:     -                Configuration Overview
+I, [2017-01-22T07:53:53.750666 #16203]  INFO -- default-ubuntu-1604:     -        </div>
+I, [2017-01-22T07:53:53.750683 #16203]  INFO -- default-ubuntu-1604:     -        <div class="content_section_text">
+I, [2017-01-22T07:53:53.750696 #16203]  INFO -- default-ubuntu-1604:     -          <p>
+I, [2017-01-22T07:53:53.750710 #16203]  INFO -- default-ubuntu-1604:     -                Ubuntu's Apache2 default configuration is different from the
+I, [2017-01-22T07:53:53.750727 #16203]  INFO -- default-ubuntu-1604:     -                upstream default configuration, and split into several files optimized for
+I, [2017-01-22T07:53:53.750742 #16203]  INFO -- default-ubuntu-1604:     -                interaction with Ubuntu tools. The configuration system is
+I, [2017-01-22T07:53:53.751151 #16203]  INFO -- default-ubuntu-1604:     -                <b>fully documented in
+I, [2017-01-22T07:53:53.751186 #16203]  INFO -- default-ubuntu-1604:     -                /usr/share/doc/apache2/README.Debian.gz</b>. Refer to this for the full
+I, [2017-01-22T07:53:53.751210 #16203]  INFO -- default-ubuntu-1604:     -                documentation. Documentation for the web server itself can be
+I, [2017-01-22T07:53:53.751226 #16203]  INFO -- default-ubuntu-1604:     -                found by accessing the <a href="/manual">manual</a> if the <tt>apache2-doc</tt>
+I, [2017-01-22T07:53:53.751240 #16203]  INFO -- default-ubuntu-1604:     -                package was installed on this server.
+I, [2017-01-22T07:53:53.751257 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.751270 #16203]  INFO -- default-ubuntu-1604:     -          </p>
+I, [2017-01-22T07:53:53.751295 #16203]  INFO -- default-ubuntu-1604:     -          <p>
+I, [2017-01-22T07:53:53.751311 #16203]  INFO -- default-ubuntu-1604:     -                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
+I, [2017-01-22T07:53:53.751334 #16203]  INFO -- default-ubuntu-1604:     -          </p>
+I, [2017-01-22T07:53:53.751359 #16203]  INFO -- default-ubuntu-1604:     -          <pre>
+I, [2017-01-22T07:53:53.751375 #16203]  INFO -- default-ubuntu-1604:     -/etc/apache2/
+I, [2017-01-22T07:53:53.751387 #16203]  INFO -- default-ubuntu-1604:     -|-- apache2.conf
+I, [2017-01-22T07:53:53.751404 #16203]  INFO -- default-ubuntu-1604:     -|       `--  ports.conf
+I, [2017-01-22T07:53:53.751416 #16203]  INFO -- default-ubuntu-1604:     -|-- mods-enabled
+I, [2017-01-22T07:53:53.751708 #16203]  INFO -- default-ubuntu-1604:     -|       |-- *.load
+I, [2017-01-22T07:53:53.751733 #16203]  INFO -- default-ubuntu-1604:     -|       `-- *.conf
+I, [2017-01-22T07:53:53.751749 #16203]  INFO -- default-ubuntu-1604:     -|-- conf-enabled
+I, [2017-01-22T07:53:53.751762 #16203]  INFO -- default-ubuntu-1604:     -|       `-- *.conf
+I, [2017-01-22T07:53:53.751966 #16203]  INFO -- default-ubuntu-1604:     -|-- sites-enabled
+I, [2017-01-22T07:53:53.751988 #16203]  INFO -- default-ubuntu-1604:     -|       `-- *.conf
+I, [2017-01-22T07:53:53.752007 #16203]  INFO -- default-ubuntu-1604:     -          </pre>
+I, [2017-01-22T07:53:53.752021 #16203]  INFO -- default-ubuntu-1604:     -          <ul>
+I, [2017-01-22T07:53:53.752034 #16203]  INFO -- default-ubuntu-1604:     -                        <li>
+I, [2017-01-22T07:53:53.752048 #16203]  INFO -- default-ubuntu-1604:     -                           <tt>apache2.conf</tt> is the main configuration
+I, [2017-01-22T07:53:53.752063 #16203]  INFO -- default-ubuntu-1604:     -                           file. It puts the pieces together by including all remaining configuration
+I, [2017-01-22T07:53:53.752247 #16203]  INFO -- default-ubuntu-1604:     -                           files when starting up the web server.
+I, [2017-01-22T07:53:53.752271 #16203]  INFO -- default-ubuntu-1604:     -                        </li>
+I, [2017-01-22T07:53:53.752290 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.752304 #16203]  INFO -- default-ubuntu-1604:     -                        <li>
+I, [2017-01-22T07:53:53.752318 #16203]  INFO -- default-ubuntu-1604:     -                           <tt>ports.conf</tt> is always included from the
+I, [2017-01-22T07:53:53.752491 #16203]  INFO -- default-ubuntu-1604:     -                           main configuration file. It is used to determine the listening ports for
+I, [2017-01-22T07:53:53.752515 #16203]  INFO -- default-ubuntu-1604:     -                           incoming connections, and this file can be customized anytime.
+I, [2017-01-22T07:53:53.752670 #16203]  INFO -- default-ubuntu-1604:     -                        </li>
+I, [2017-01-22T07:53:53.752692 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.752708 #16203]  INFO -- default-ubuntu-1604:     -                        <li>
+I, [2017-01-22T07:53:53.752722 #16203]  INFO -- default-ubuntu-1604:     -                           Configuration files in the <tt>mods-enabled/</tt>,
+I, [2017-01-22T07:53:53.752739 #16203]  INFO -- default-ubuntu-1604:     -                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
+I, [2017-01-22T07:53:53.752919 #16203]  INFO -- default-ubuntu-1604:     -                           particular configuration snippets which manage modules, global configuration
+I, [2017-01-22T07:53:53.752942 #16203]  INFO -- default-ubuntu-1604:     -                           fragments, or virtual host configurations, respectively.
+I, [2017-01-22T07:53:53.752959 #16203]  INFO -- default-ubuntu-1604:     -                        </li>
+I, [2017-01-22T07:53:53.752972 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.753238 #16203]  INFO -- default-ubuntu-1604:     -                        <li>
+I, [2017-01-22T07:53:53.753262 #16203]  INFO -- default-ubuntu-1604:     -                           They are activated by symlinking available
+I, [2017-01-22T07:53:53.753279 #16203]  INFO -- default-ubuntu-1604:     -                           configuration files from their respective
+I, [2017-01-22T07:53:53.753295 #16203]  INFO -- default-ubuntu-1604:     -                           *-available/ counterparts. These should be managed
+I, [2017-01-22T07:53:53.753309 #16203]  INFO -- default-ubuntu-1604:     -                           by using our helpers
+I, [2017-01-22T07:53:53.753326 #16203]  INFO -- default-ubuntu-1604:     -                           <tt>
+I, [2017-01-22T07:53:53.753340 #16203]  INFO -- default-ubuntu-1604:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2enmod">a2enmod</a>,
+I, [2017-01-22T07:53:53.753355 #16203]  INFO -- default-ubuntu-1604:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2dismod">a2dismod</a>,
+I, [2017-01-22T07:53:53.753587 #16203]  INFO -- default-ubuntu-1604:     -                           </tt>
+I, [2017-01-22T07:53:53.753610 #16203]  INFO -- default-ubuntu-1604:     -                           <tt>
+I, [2017-01-22T07:53:53.753630 #16203]  INFO -- default-ubuntu-1604:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2ensite">a2ensite</a>,
+I, [2017-01-22T07:53:53.753645 #16203]  INFO -- default-ubuntu-1604:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2dissite">a2dissite</a>,
+I, [2017-01-22T07:53:53.753660 #16203]  INFO -- default-ubuntu-1604:     -                            </tt>
+I, [2017-01-22T07:53:53.753673 #16203]  INFO -- default-ubuntu-1604:     -                                and
+I, [2017-01-22T07:53:53.753896 #16203]  INFO -- default-ubuntu-1604:     -                           <tt>
+I, [2017-01-22T07:53:53.753919 #16203]  INFO -- default-ubuntu-1604:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2enconf">a2enconf</a>,
+I, [2017-01-22T07:53:53.753936 #16203]  INFO -- default-ubuntu-1604:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2disconf">a2disconf</a>
+I, [2017-01-22T07:53:53.753952 #16203]  INFO -- default-ubuntu-1604:     -                           </tt>. See their respective man pages for detailed information.
+I, [2017-01-22T07:53:53.753966 #16203]  INFO -- default-ubuntu-1604:     -                        </li>
+I, [2017-01-22T07:53:53.754120 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.754142 #16203]  INFO -- default-ubuntu-1604:     -                        <li>
+I, [2017-01-22T07:53:53.754291 #16203]  INFO -- default-ubuntu-1604:     -                           The binary is called apache2. Due to the use of
+I, [2017-01-22T07:53:53.754485 #16203]  INFO -- default-ubuntu-1604:     -                           environment variables, in the default configuration, apache2 needs to be
+I, [2017-01-22T07:53:53.754510 #16203]  INFO -- default-ubuntu-1604:     -                           started/stopped with <tt>/etc/init.d/apache2</tt> or <tt>apache2ctl</tt>.
+I, [2017-01-22T07:53:53.754540 #16203]  INFO -- default-ubuntu-1604:     -                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
+I, [2017-01-22T07:53:53.754566 #16203]  INFO -- default-ubuntu-1604:     -                           default configuration.
+I, [2017-01-22T07:53:53.754590 #16203]  INFO -- default-ubuntu-1604:     -                        </li>
+I, [2017-01-22T07:53:53.754604 #16203]  INFO -- default-ubuntu-1604:     -          </ul>
+I, [2017-01-22T07:53:53.754621 #16203]  INFO -- default-ubuntu-1604:     -        </div>
+I, [2017-01-22T07:53:53.755650 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.755697 #16203]  INFO -- default-ubuntu-1604:     -        <div class="section_header">
+I, [2017-01-22T07:53:53.755745 #16203]  INFO -- default-ubuntu-1604:     -            <div id="docroot"></div>
+I, [2017-01-22T07:53:53.755773 #16203]  INFO -- default-ubuntu-1604:     -                Document Roots
+I, [2017-01-22T07:53:53.755792 #16203]  INFO -- default-ubuntu-1604:     -        </div>
+I, [2017-01-22T07:53:53.755806 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.755823 #16203]  INFO -- default-ubuntu-1604:     -        <div class="content_section_text">
+I, [2017-01-22T07:53:53.756405 #16203]  INFO -- default-ubuntu-1604:     -            <p>
+I, [2017-01-22T07:53:53.756451 #16203]  INFO -- default-ubuntu-1604:     -                By default, Ubuntu does not allow access through the web browser to
+I, [2017-01-22T07:53:53.756481 #16203]  INFO -- default-ubuntu-1604:     -                <em>any</em> file apart of those located in <tt>/var/www</tt>,
+I, [2017-01-22T07:53:53.756507 #16203]  INFO -- default-ubuntu-1604:     -                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html">public_html</a>
+I, [2017-01-22T07:53:53.756547 #16203]  INFO -- default-ubuntu-1604:     -                directories (when enabled) and <tt>/usr/share</tt> (for web
+I, [2017-01-22T07:53:53.756571 #16203]  INFO -- default-ubuntu-1604:     -                applications). If your site is using a web document root
+I, [2017-01-22T07:53:53.756587 #16203]  INFO -- default-ubuntu-1604:     -                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
+I, [2017-01-22T07:53:53.756601 #16203]  INFO -- default-ubuntu-1604:     -                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
+I, [2017-01-22T07:53:53.756918 #16203]  INFO -- default-ubuntu-1604:     -            </p>
+I, [2017-01-22T07:53:53.756943 #16203]  INFO -- default-ubuntu-1604:     -            <p>
+I, [2017-01-22T07:53:53.756960 #16203]  INFO -- default-ubuntu-1604:     -                The default Ubuntu document root is <tt>/var/www/html</tt>. You
+I, [2017-01-22T07:53:53.756974 #16203]  INFO -- default-ubuntu-1604:     -                can make your own virtual hosts under /var/www. This is different
+I, [2017-01-22T07:53:53.756988 #16203]  INFO -- default-ubuntu-1604:     -                to previous releases which provides better security out of the box.
+I, [2017-01-22T07:53:53.757147 #16203]  INFO -- default-ubuntu-1604:     -            </p>
+I, [2017-01-22T07:53:53.757211 #16203]  INFO -- default-ubuntu-1604:     -        </div>
+I, [2017-01-22T07:53:53.757235 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.757250 #16203]  INFO -- default-ubuntu-1604:     -        <div class="section_header">
+I, [2017-01-22T07:53:53.757264 #16203]  INFO -- default-ubuntu-1604:     -          <div id="bugs"></div>
+I, [2017-01-22T07:53:53.757277 #16203]  INFO -- default-ubuntu-1604:     -                Reporting Problems
+I, [2017-01-22T07:53:53.757590 #16203]  INFO -- default-ubuntu-1604:     -        </div>
+I, [2017-01-22T07:53:53.757616 #16203]  INFO -- default-ubuntu-1604:     -        <div class="content_section_text">
+I, [2017-01-22T07:53:53.757632 #16203]  INFO -- default-ubuntu-1604:     -          <p>
+I, [2017-01-22T07:53:53.757646 #16203]  INFO -- default-ubuntu-1604:     -                Please use the <tt>ubuntu-bug</tt> tool to report bugs in the
+I, [2017-01-22T07:53:53.757660 #16203]  INFO -- default-ubuntu-1604:     -                Apache2 package with Ubuntu. However, check <a
+I, [2017-01-22T07:53:53.757673 #16203]  INFO -- default-ubuntu-1604:     -                href="https://bugs.launchpad.net/ubuntu/+source/apache2">existing
+I, [2017-01-22T07:53:53.757687 #16203]  INFO -- default-ubuntu-1604:     -                bug reports</a> before reporting a new bug.
+I, [2017-01-22T07:53:53.757942 #16203]  INFO -- default-ubuntu-1604:     -          </p>
+I, [2017-01-22T07:53:53.757966 #16203]  INFO -- default-ubuntu-1604:     -          <p>
+I, [2017-01-22T07:53:53.757982 #16203]  INFO -- default-ubuntu-1604:     -                Please report bugs specific to modules (such as PHP and others)
+I, [2017-01-22T07:53:53.758009 #16203]  INFO -- default-ubuntu-1604:     -                to respective packages, not to the web server itself.
+I, [2017-01-22T07:53:53.758024 #16203]  INFO -- default-ubuntu-1604:     -          </p>
+I, [2017-01-22T07:53:53.758037 #16203]  INFO -- default-ubuntu-1604:     -        </div>
+I, [2017-01-22T07:53:53.758264 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.758289 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.758303 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.758315 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.758487 #16203]  INFO -- default-ubuntu-1604:     -      </div>
+I, [2017-01-22T07:53:53.758510 #16203]  INFO -- default-ubuntu-1604:     -    </div>
+I, [2017-01-22T07:53:53.758525 #16203]  INFO -- default-ubuntu-1604:     -    <div class="validator">
+I, [2017-01-22T07:53:53.758538 #16203]  INFO -- default-ubuntu-1604:     -    </div>
+I, [2017-01-22T07:53:53.758550 #16203]  INFO -- default-ubuntu-1604:     -  </body>
+I, [2017-01-22T07:53:53.758562 #16203]  INFO -- default-ubuntu-1604:     +<html>
+I, [2017-01-22T07:53:53.758574 #16203]  INFO -- default-ubuntu-1604:     +    <h1>
+I, [2017-01-22T07:53:53.758808 #16203]  INFO -- default-ubuntu-1604:     +        <body>
+I, [2017-01-22T07:53:53.758833 #16203]  INFO -- default-ubuntu-1604:     +            <h1>Hello World! This is a template on default-ubuntu-1604</h1>
+I, [2017-01-22T07:53:53.758851 #16203]  INFO -- default-ubuntu-1604:     +        </body>
+I, [2017-01-22T07:53:53.758865 #16203]  INFO -- default-ubuntu-1604:     +    </h1>
+I, [2017-01-22T07:53:53.758877 #16203]  INFO -- default-ubuntu-1604:      </html>
+I, [2017-01-22T07:53:53.759056 #16203]  INFO -- default-ubuntu-1604:     -
+I, [2017-01-22T07:53:53.759319 #16203]  INFO -- default-ubuntu-1604:     - change owner from 'root' to 'web_admin'
+I, [2017-01-22T07:53:53.759559 #16203]  INFO -- default-ubuntu-1604:     - change group from 'root' to 'web_admin'
+I, [2017-01-22T07:53:53.787370 #16203]  INFO -- default-ubuntu-1604: 
+I, [2017-01-22T07:53:53.787661 #16203]  INFO -- default-ubuntu-1604: Running handlers:
+I, [2017-01-22T07:53:53.787947 #16203]  INFO -- default-ubuntu-1604: Running handlers complete
+I, [2017-01-22T07:53:53.788196 #16203]  INFO -- default-ubuntu-1604: Chef Client finished, 1/7 resources updated in 02 seconds
+I, [2017-01-22T07:53:53.868535 #16203]  INFO -- default-ubuntu-1604: Finished converging <default-ubuntu-1604> (0m6.43s).

@@ -1,0 +1,7 @@
+---
+hostname: 127.0.0.1
+port: '2200'
+username: vagrant
+ssh_key: "/opt/workspace/dwin1000test/projects/chef/aws-chefautomate/cookbooks/learn_chef_apache2/.kitchen/kitchen-vagrant/kitchen-learn_chef_apache2-default-ubuntu-1604/.vagrant/machines/default/virtualbox/private_key"
+last_action: converge
+last_error: 
