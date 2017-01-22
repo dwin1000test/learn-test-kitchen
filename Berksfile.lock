@@ -1,6 +1,6 @@
 DEPENDENCIES
   chef-client
-  learn_chef_apache2
+  learn-test-kitchen
     path: .
     metadata: true
 
@@ -11,7 +11,7 @@ GRAPH
     windows (>= 1.42.0)
   compat_resource (12.16.3)
   cron (3.0.0)
-  learn_chef_apache2 (0.2.1)
+  learn-test-kitchen (0.3.2)
   logrotate (2.1.0)
     compat_resource (>= 0.0.0)
   ohai (4.2.3)

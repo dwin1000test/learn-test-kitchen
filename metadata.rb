@@ -1,10 +1,10 @@
-name 'learn_chef_apache2'
+name 'learn-test-kitchen'
 maintainer 'Darren Nguyen'
 maintainer_email 'dwin1000@bimodalconsulting.com'
 license 'all_rights'
-description 'Installs/Configures learn_chef_apache2'
-long_description 'Installs/Configures learn_chef_apache2'
-version '0.2.1'
+description 'Installs/Configures learn-test-kitchen'
+long_description 'Installs/Configures learn-test-kitchen'
+version '0.3.2'
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when
