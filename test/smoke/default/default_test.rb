@@ -12,13 +12,27 @@ unless os.windows?
   end
 end
 
-describe package 'apache2' do
-    it { should be_installed }
+if os[:family] == 'debian'
+    describe package 'apache2' do
+        it { should be_installed }
+    end
+    describe service 'apache2' do
+        it { should be_enabled }
+        it { should be_running }
+    end
+elsif os[:family] == 'rhel'
+    describe package 'httpd' do
+        it { should be_installed }
+    end
+    describe service 'httpd' do
+        it { should be_enabled }
+        it { should be_running }
+    end
 end
-
-describe service 'apache2' do
-    it { should be_enabled }
-    it { should be_running }
+    
+describe file '/var/www/html/index.html' do
+    it { should be_owned_by 'web_admin' }
+    its('mode') { should cmp '0644' }
 end
 
 describe port(80) do
