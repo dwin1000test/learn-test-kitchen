@@ -1,2 +1,4 @@
-# learn-test-kitchen
-Repo to learn test kitchen
+# learn_chef_apache2
+
+TODO: Enter the cookbook description here.
+
