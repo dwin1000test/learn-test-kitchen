@@ -1,513 +1,516 @@
-I, [2017-01-22T14:40:03.097411 #21288]  INFO -- default-ubuntu-1404: -----> Cleaning up any prior instances of <default-ubuntu-1404>
-I, [2017-01-22T14:40:03.097519 #21288]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
-I, [2017-01-22T14:40:03.098139 #21288]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m0.00s).
-I, [2017-01-22T14:40:03.098334 #21288]  INFO -- default-ubuntu-1404: -----> Testing <default-ubuntu-1404>
-I, [2017-01-22T14:40:03.098426 #21288]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
-I, [2017-01-22T14:40:04.717954 #21288]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
-I, [2017-01-22T14:40:04.863227 #21288]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'bento/ubuntu-14.04'...
-I, [2017-01-22T14:40:12.598067 #21288]  INFO -- default-ubuntu-1404: [KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
-I, [2017-01-22T14:40:12.722933 #21288]  INFO -- default-ubuntu-1404: ==> default: Checking if box 'bento/ubuntu-14.04' is up to date...
-I, [2017-01-22T14:40:13.875129 #21288]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: kitchen-learn-test-kitchen-default-ubuntu-1404_default_1485124813831_60881
-I, [2017-01-22T14:40:14.407506 #21288]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2201.
-I, [2017-01-22T14:40:14.657769 #21288]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
-I, [2017-01-22T14:40:14.702304 #21288]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
-I, [2017-01-22T14:40:14.702618 #21288]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
-I, [2017-01-22T14:40:14.751084 #21288]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
-I, [2017-01-22T14:40:14.822714 #21288]  INFO -- default-ubuntu-1404:     default: 22 (guest) => 2201 (host) (adapter 1)
-I, [2017-01-22T14:40:14.953472 #21288]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
-I, [2017-01-22T14:40:15.168319 #21288]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
-I, [2017-01-22T14:40:15.446632 #21288]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2201
-I, [2017-01-22T14:40:15.446951 #21288]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
-I, [2017-01-22T14:40:15.447243 #21288]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
-I, [2017-01-22T14:40:31.164302 #21288]  INFO -- default-ubuntu-1404:     default: 
-I, [2017-01-22T14:40:31.164368 #21288]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
-I, [2017-01-22T14:40:31.164392 #21288]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
-I, [2017-01-22T14:40:31.482400 #21288]  INFO -- default-ubuntu-1404:     default: 
-I, [2017-01-22T14:40:31.482458 #21288]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
-I, [2017-01-22T14:40:31.525537 #21288]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if it's present...
-I, [2017-01-22T14:40:31.566130 #21288]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
-I, [2017-01-22T14:40:32.228433 #21288]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
-I, [2017-01-22T14:40:32.228918 #21288]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
-I, [2017-01-22T14:40:32.275432 #21288]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
-I, [2017-01-22T14:40:32.418469 #21288]  INFO -- default-ubuntu-1404: ==> default: Mounting shared folders...
-I, [2017-01-22T14:40:32.418758 #21288]  INFO -- default-ubuntu-1404:     default: /tmp/omnibus/cache => /Users/darren/workspace/environments/dwin1000test/.kitchen/cache
-I, [2017-01-22T14:40:32.686771 #21288]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioned because `--no-provision` is specified.
-I, [2017-01-22T14:40:35.057303 #21288]  INFO -- default-ubuntu-1404: [SSH] Established
-I, [2017-01-22T14:40:35.057604 #21288]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
-I, [2017-01-22T14:40:35.058994 #21288]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m31.96s).
-I, [2017-01-22T14:40:35.059362 #21288]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
-I, [2017-01-22T14:40:35.060051 #21288]  INFO -- default-ubuntu-1404: Preparing files for transfer
-I, [2017-01-22T14:40:35.060190 #21288]  INFO -- default-ubuntu-1404: Preparing dna.json
-I, [2017-01-22T14:40:35.060683 #21288]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 5.2.0...
-I, [2017-01-22T14:40:37.393939 #21288]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
-I, [2017-01-22T14:40:37.406824 #21288]  INFO -- default-ubuntu-1404: Preparing validation.pem
-I, [2017-01-22T14:40:37.407520 #21288]  INFO -- default-ubuntu-1404: Preparing client.rb
-I, [2017-01-22T14:40:37.418155 #21288]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
-I, [2017-01-22T14:40:37.418486 #21288]  INFO -- default-ubuntu-1404: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
-I, [2017-01-22T14:40:37.418804 #21288]  INFO -- default-ubuntu-1404: Trying wget...
-I, [2017-01-22T14:40:37.733425 #21288]  INFO -- default-ubuntu-1404: Download complete.
-I, [2017-01-22T14:40:37.745637 #21288]  INFO -- default-ubuntu-1404: ubuntu 14.04 x86_64
-I, [2017-01-22T14:40:37.745904 #21288]  INFO -- default-ubuntu-1404: Getting information for chef stable  for ubuntu...
-I, [2017-01-22T14:40:37.746159 #21288]  INFO -- default-ubuntu-1404: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=14.04&m=x86_64
-I, [2017-01-22T14:40:37.746298 #21288]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1482/metadata.txt
-I, [2017-01-22T14:40:37.746603 #21288]  INFO -- default-ubuntu-1404: trying wget...
-I, [2017-01-22T14:40:37.978739 #21288]  INFO -- default-ubuntu-1404: sha1	10b9026d57005aaf31289aec650931a02b5347d3
-I, [2017-01-22T14:40:37.979329 #21288]  INFO -- default-ubuntu-1404: sha256	de5991b073fb22aa295fd0142f5e4ed3ca7da6ffe2c3fdcb01da29e4cdd0bd04
-I, [2017-01-22T14:40:37.979837 #21288]  INFO -- default-ubuntu-1404: url	https://packages.chef.io/files/stable/chef/12.17.44/ubuntu/14.04/chef_12.17.44-1_amd64.deb
-I, [2017-01-22T14:40:37.980375 #21288]  INFO -- default-ubuntu-1404: version	12.17.44
-I, [2017-01-22T14:40:37.982141 #21288]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
-I, [2017-01-22T14:40:37.987602 #21288]  INFO -- default-ubuntu-1404: /tmp/omnibus/cache/chef_12.17.44-1_amd64.deb already exists, verifiying checksum...
-I, [2017-01-22T14:40:37.987805 #21288]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
-I, [2017-01-22T14:40:38.333816 #21288]  INFO -- default-ubuntu-1404: checksum compare succeeded, using existing file!
-I, [2017-01-22T14:40:38.333953 #21288]  INFO -- default-ubuntu-1404: 
-I, [2017-01-22T14:40:38.334127 #21288]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-I, [2017-01-22T14:40:38.334234 #21288]  INFO -- default-ubuntu-1404: 
-I, [2017-01-22T14:40:38.334384 #21288]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
-I, [2017-01-22T14:40:38.334517 #21288]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
-I, [2017-01-22T14:40:38.334669 #21288]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major releases.
-I, [2017-01-22T14:40:38.334807 #21288]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
-I, [2017-01-22T14:40:38.335083 #21288]  INFO -- default-ubuntu-1404: CI/CD environments.
-I, [2017-01-22T14:40:38.335196 #21288]  INFO -- default-ubuntu-1404: 
-I, [2017-01-22T14:40:38.335423 #21288]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
-I, [2017-01-22T14:40:38.335540 #21288]  INFO -- default-ubuntu-1404: 
-I, [2017-01-22T14:40:38.335817 #21288]  INFO -- default-ubuntu-1404: Installing chef 
-I, [2017-01-22T14:40:38.335968 #21288]  INFO -- default-ubuntu-1404: installing with dpkg...
-I, [2017-01-22T14:40:38.386555 #21288]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
-I, [2017-01-22T14:40:38.545636 #21288]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35284 files and directories currently installed.)
-I, [2017-01-22T14:40:38.546931 #21288]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_12.17.44-1_amd64.deb ...
-I, [2017-01-22T14:40:38.551300 #21288]  INFO -- default-ubuntu-1404: Unpacking chef (12.17.44-1) ...
-I, [2017-01-22T14:40:43.470942 #21288]  INFO -- default-ubuntu-1404: Setting up chef (12.17.44-1) ...
-I, [2017-01-22T14:40:43.530709 #21288]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
-I, [2017-01-22T14:40:43.562626 #21288]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
-I, [2017-01-22T14:40:44.839137 #21288]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.17.44
-I, [2017-01-22T14:40:46.419820 #21288]  INFO -- default-ubuntu-1404: Creating a new client identity for default-ubuntu-1404 using the validator key.
-I, [2017-01-22T14:40:46.614153 #21288]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["learn-test-kitchen::default"]
-I, [2017-01-22T14:40:46.700947 #21288]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
-I, [2017-01-22T14:40:46.706885 #21288]  INFO -- default-ubuntu-1404:   - learn-test-kitchen (0.3.2)
-I, [2017-01-22T14:40:46.707261 #21288]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
-I, [2017-01-22T14:40:46.707686 #21288]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
-I, [2017-01-22T14:40:46.711486 #21288]  INFO -- default-ubuntu-1404: Converging 6 resources
-I, [2017-01-22T14:40:46.711680 #21288]  INFO -- default-ubuntu-1404: Recipe: learn-test-kitchen::default
-I, [2017-01-22T14:40:46.719166 #21288]  INFO -- default-ubuntu-1404:   * apt_update[Update the apt cache daily] action periodic
-I, [2017-01-22T14:40:46.719481 #21288]  INFO -- default-ubuntu-1404:     - update new lists of packages
-I, [2017-01-22T14:40:46.721505 #21288]  INFO -- default-ubuntu-1404:     * directory[/var/lib/apt/periodic] action create (up to date)
-I, [2017-01-22T14:40:46.722992 #21288]  INFO -- default-ubuntu-1404:     * directory[/etc/apt/apt.conf.d] action create (up to date)
-I, [2017-01-22T14:40:46.724902 #21288]  INFO -- default-ubuntu-1404:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (up to date)
-I, [2017-01-22T14:40:56.583538 #21288]  INFO -- default-ubuntu-1404:     * execute[apt-get -q update] action run
-I, [2017-01-22T14:40:56.583605 #21288]  INFO -- default-ubuntu-1404:       - execute apt-get -q update
-I, [2017-01-22T14:40:56.583629 #21288]  INFO -- default-ubuntu-1404:   
-I, [2017-01-22T14:41:06.616532 #21288]  INFO -- default-ubuntu-1404:   * apt_package[apache2] action install
-I, [2017-01-22T14:41:06.618070 #21288]  INFO -- default-ubuntu-1404:     - install version 2.4.7-1ubuntu4.13 of package apache2
-I, [2017-01-22T14:41:06.673422 #21288]  INFO -- default-ubuntu-1404:   * service[apache2] action enable (up to date)
-I, [2017-01-22T14:41:06.701039 #21288]  INFO -- default-ubuntu-1404:   * service[apache2] action start (up to date)
-I, [2017-01-22T14:41:06.748511 #21288]  INFO -- default-ubuntu-1404:   * group[web_admin] action create
-I, [2017-01-22T14:41:06.748976 #21288]  INFO -- default-ubuntu-1404:     - create group web_admin
-I, [2017-01-22T14:41:06.802329 #21288]  INFO -- default-ubuntu-1404:   * linux_user[web_admin] action create
-I, [2017-01-22T14:41:06.802381 #21288]  INFO -- default-ubuntu-1404:     - create user web_admin
-I, [2017-01-22T14:41:06.806674 #21288]  INFO -- default-ubuntu-1404:   * template[/var/www/html/index.html] action create
-I, [2017-01-22T14:41:06.806997 #21288]  INFO -- default-ubuntu-1404:     - update content in file /var/www/html/index.html from 538f31 to 4b8ea2
-I, [2017-01-22T14:41:06.807300 #21288]  INFO -- default-ubuntu-1404:     --- /var/www/html/index.html	2017-01-22 22:41:04.367651767 +0000
-I, [2017-01-22T14:41:06.808009 #21288]  INFO -- default-ubuntu-1404:     +++ /var/www/html/.chef-index20170122-1573-iwpr2z.html	2017-01-22 22:41:06.803651767 +0000
-I, [2017-01-22T14:41:06.808211 #21288]  INFO -- default-ubuntu-1404:     @@ -1,379 +1,8 @@
-I, [2017-01-22T14:41:06.808595 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.809086 #21288]  INFO -- default-ubuntu-1404:     -<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-I, [2017-01-22T14:41:06.809416 #21288]  INFO -- default-ubuntu-1404:     -<html xmlns="http://www.w3.org/1999/xhtml">
-I, [2017-01-22T14:41:06.809814 #21288]  INFO -- default-ubuntu-1404:     -  <!--
-I, [2017-01-22T14:41:06.810082 #21288]  INFO -- default-ubuntu-1404:     -    Modified from the Debian original for Ubuntu
-I, [2017-01-22T14:41:06.810280 #21288]  INFO -- default-ubuntu-1404:     -    Last updated: 2014-03-19
-I, [2017-01-22T14:41:06.810603 #21288]  INFO -- default-ubuntu-1404:     -    See: https://launchpad.net/bugs/1288690
-I, [2017-01-22T14:41:06.811039 #21288]  INFO -- default-ubuntu-1404:     -  -->
-I, [2017-01-22T14:41:06.811260 #21288]  INFO -- default-ubuntu-1404:     -  <head>
-I, [2017-01-22T14:41:06.811751 #21288]  INFO -- default-ubuntu-1404:     -    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-I, [2017-01-22T14:41:06.811786 #21288]  INFO -- default-ubuntu-1404:     -    <title>Apache2 Ubuntu Default Page: It works</title>
-I, [2017-01-22T14:41:06.811815 #21288]  INFO -- default-ubuntu-1404:     -    <style type="text/css" media="screen">
-I, [2017-01-22T14:41:06.811831 #21288]  INFO -- default-ubuntu-1404:     -  * {
-I, [2017-01-22T14:41:06.811845 #21288]  INFO -- default-ubuntu-1404:     -    margin: 0px 0px 0px 0px;
-I, [2017-01-22T14:41:06.811858 #21288]  INFO -- default-ubuntu-1404:     -    padding: 0px 0px 0px 0px;
-I, [2017-01-22T14:41:06.811872 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.812161 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.812194 #21288]  INFO -- default-ubuntu-1404:     -  body, html {
-I, [2017-01-22T14:41:06.812214 #21288]  INFO -- default-ubuntu-1404:     -    padding: 3px 3px 3px 3px;
-I, [2017-01-22T14:41:06.812337 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.812362 #21288]  INFO -- default-ubuntu-1404:     -    background-color: #D8DBE2;
-I, [2017-01-22T14:41:06.812378 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.812559 #21288]  INFO -- default-ubuntu-1404:     -    font-family: Verdana, sans-serif;
-I, [2017-01-22T14:41:06.812717 #21288]  INFO -- default-ubuntu-1404:     -    font-size: 11pt;
-I, [2017-01-22T14:41:06.812872 #21288]  INFO -- default-ubuntu-1404:     -    text-align: center;
-I, [2017-01-22T14:41:06.812902 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.812922 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.812937 #21288]  INFO -- default-ubuntu-1404:     -  div.main_page {
-I, [2017-01-22T14:41:06.812952 #21288]  INFO -- default-ubuntu-1404:     -    position: relative;
-I, [2017-01-22T14:41:06.813378 #21288]  INFO -- default-ubuntu-1404:     -    display: table;
-I, [2017-01-22T14:41:06.813405 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.813424 #21288]  INFO -- default-ubuntu-1404:     -    width: 800px;
-I, [2017-01-22T14:41:06.813439 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.813590 #21288]  INFO -- default-ubuntu-1404:     -    margin-bottom: 3px;
-I, [2017-01-22T14:41:06.813618 #21288]  INFO -- default-ubuntu-1404:     -    margin-left: auto;
-I, [2017-01-22T14:41:06.813678 #21288]  INFO -- default-ubuntu-1404:     -    margin-right: auto;
-I, [2017-01-22T14:41:06.813844 #21288]  INFO -- default-ubuntu-1404:     -    padding: 0px 0px 0px 0px;
-I, [2017-01-22T14:41:06.813871 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.813886 #21288]  INFO -- default-ubuntu-1404:     -    border-width: 2px;
-I, [2017-01-22T14:41:06.813898 #21288]  INFO -- default-ubuntu-1404:     -    border-color: #212738;
-I, [2017-01-22T14:41:06.813910 #21288]  INFO -- default-ubuntu-1404:     -    border-style: solid;
-I, [2017-01-22T14:41:06.813921 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.813932 #21288]  INFO -- default-ubuntu-1404:     -    background-color: #FFFFFF;
-I, [2017-01-22T14:41:06.813943 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.813953 #21288]  INFO -- default-ubuntu-1404:     -    text-align: center;
-I, [2017-01-22T14:41:06.813963 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.813973 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.813984 #21288]  INFO -- default-ubuntu-1404:     -  div.page_header {
-I, [2017-01-22T14:41:06.813995 #21288]  INFO -- default-ubuntu-1404:     -    height: 99px;
-I, [2017-01-22T14:41:06.814222 #21288]  INFO -- default-ubuntu-1404:     -    width: 100%;
-I, [2017-01-22T14:41:06.814243 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.814368 #21288]  INFO -- default-ubuntu-1404:     -    background-color: #F5F6F7;
-I, [2017-01-22T14:41:06.814548 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.814587 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.814617 #21288]  INFO -- default-ubuntu-1404:     -  div.page_header span {
-I, [2017-01-22T14:41:06.814634 #21288]  INFO -- default-ubuntu-1404:     -    margin: 15px 0px 0px 50px;
-I, [2017-01-22T14:41:06.814790 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.814867 #21288]  INFO -- default-ubuntu-1404:     -    font-size: 180%;
-I, [2017-01-22T14:41:06.814891 #21288]  INFO -- default-ubuntu-1404:     -    font-weight: bold;
-I, [2017-01-22T14:41:06.815001 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.815022 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.815043 #21288]  INFO -- default-ubuntu-1404:     -  div.page_header img {
-I, [2017-01-22T14:41:06.815059 #21288]  INFO -- default-ubuntu-1404:     -    margin: 3px 0px 0px 40px;
-I, [2017-01-22T14:41:06.815080 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.815273 #21288]  INFO -- default-ubuntu-1404:     -    border: 0px 0px 0px;
-I, [2017-01-22T14:41:06.815295 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.815308 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.815320 #21288]  INFO -- default-ubuntu-1404:     -  div.table_of_contents {
-I, [2017-01-22T14:41:06.815337 #21288]  INFO -- default-ubuntu-1404:     -    clear: left;
-I, [2017-01-22T14:41:06.815358 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.815371 #21288]  INFO -- default-ubuntu-1404:     -    min-width: 200px;
-I, [2017-01-22T14:41:06.815554 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.815575 #21288]  INFO -- default-ubuntu-1404:     -    margin: 3px 3px 3px 3px;
-I, [2017-01-22T14:41:06.815587 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.815662 #21288]  INFO -- default-ubuntu-1404:     -    background-color: #FFFFFF;
-I, [2017-01-22T14:41:06.815795 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.815871 #21288]  INFO -- default-ubuntu-1404:     -    text-align: left;
-I, [2017-01-22T14:41:06.815891 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.815903 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.815915 #21288]  INFO -- default-ubuntu-1404:     -  div.table_of_contents_item {
-I, [2017-01-22T14:41:06.815926 #21288]  INFO -- default-ubuntu-1404:     -    clear: left;
-I, [2017-01-22T14:41:06.816108 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.816136 #21288]  INFO -- default-ubuntu-1404:     -    width: 100%;
-I, [2017-01-22T14:41:06.816152 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.816165 #21288]  INFO -- default-ubuntu-1404:     -    margin: 4px 0px 0px 0px;
-I, [2017-01-22T14:41:06.816177 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.816189 #21288]  INFO -- default-ubuntu-1404:     -    background-color: #FFFFFF;
-I, [2017-01-22T14:41:06.816200 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.816391 #21288]  INFO -- default-ubuntu-1404:     -    color: #000000;
-I, [2017-01-22T14:41:06.816413 #21288]  INFO -- default-ubuntu-1404:     -    text-align: left;
-I, [2017-01-22T14:41:06.816427 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.816438 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.816450 #21288]  INFO -- default-ubuntu-1404:     -  div.table_of_contents_item a {
-I, [2017-01-22T14:41:06.816582 #21288]  INFO -- default-ubuntu-1404:     -    margin: 6px 0px 0px 6px;
-I, [2017-01-22T14:41:06.816604 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.816618 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.816630 #21288]  INFO -- default-ubuntu-1404:     -  div.content_section {
-I, [2017-01-22T14:41:06.816641 #21288]  INFO -- default-ubuntu-1404:     -    margin: 3px 3px 3px 3px;
-I, [2017-01-22T14:41:06.816842 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.816869 #21288]  INFO -- default-ubuntu-1404:     -    background-color: #FFFFFF;
-I, [2017-01-22T14:41:06.816883 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.816896 #21288]  INFO -- default-ubuntu-1404:     -    text-align: left;
-I, [2017-01-22T14:41:06.816908 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.817072 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.817093 #21288]  INFO -- default-ubuntu-1404:     -  div.content_section_text {
-I, [2017-01-22T14:41:06.817106 #21288]  INFO -- default-ubuntu-1404:     -    padding: 4px 8px 4px 8px;
-I, [2017-01-22T14:41:06.817210 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.817230 #21288]  INFO -- default-ubuntu-1404:     -    color: #000000;
-I, [2017-01-22T14:41:06.817243 #21288]  INFO -- default-ubuntu-1404:     -    font-size: 100%;
-I, [2017-01-22T14:41:06.817254 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.817265 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.817277 #21288]  INFO -- default-ubuntu-1404:     -  div.content_section_text pre {
-I, [2017-01-22T14:41:06.817443 #21288]  INFO -- default-ubuntu-1404:     -    margin: 8px 0px 8px 0px;
-I, [2017-01-22T14:41:06.817466 #21288]  INFO -- default-ubuntu-1404:     -    padding: 8px 8px 8px 8px;
-I, [2017-01-22T14:41:06.817478 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.817490 #21288]  INFO -- default-ubuntu-1404:     -    border-width: 1px;
-I, [2017-01-22T14:41:06.817607 #21288]  INFO -- default-ubuntu-1404:     -    border-style: dotted;
-I, [2017-01-22T14:41:06.817634 #21288]  INFO -- default-ubuntu-1404:     -    border-color: #000000;
-I, [2017-01-22T14:41:06.817648 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.817659 #21288]  INFO -- default-ubuntu-1404:     -    background-color: #F5F6F7;
-I, [2017-01-22T14:41:06.817682 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.817851 #21288]  INFO -- default-ubuntu-1404:     -    font-style: italic;
-I, [2017-01-22T14:41:06.817872 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.817884 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.817896 #21288]  INFO -- default-ubuntu-1404:     -  div.content_section_text p {
-I, [2017-01-22T14:41:06.818003 #21288]  INFO -- default-ubuntu-1404:     -    margin-bottom: 6px;
-I, [2017-01-22T14:41:06.818062 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.818076 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.818087 #21288]  INFO -- default-ubuntu-1404:     -  div.content_section_text ul, div.content_section_text li {
-I, [2017-01-22T14:41:06.818099 #21288]  INFO -- default-ubuntu-1404:     -    padding: 4px 8px 4px 16px;
-I, [2017-01-22T14:41:06.818229 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.818251 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.818264 #21288]  INFO -- default-ubuntu-1404:     -  div.section_header {
-I, [2017-01-22T14:41:06.818275 #21288]  INFO -- default-ubuntu-1404:     -    padding: 3px 6px 3px 6px;
-I, [2017-01-22T14:41:06.818286 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.818297 #21288]  INFO -- default-ubuntu-1404:     -    background-color: #8E9CB2;
-I, [2017-01-22T14:41:06.818308 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.818542 #21288]  INFO -- default-ubuntu-1404:     -    color: #FFFFFF;
-I, [2017-01-22T14:41:06.818571 #21288]  INFO -- default-ubuntu-1404:     -    font-weight: bold;
-I, [2017-01-22T14:41:06.818587 #21288]  INFO -- default-ubuntu-1404:     -    font-size: 112%;
-I, [2017-01-22T14:41:06.818600 #21288]  INFO -- default-ubuntu-1404:     -    text-align: center;
-I, [2017-01-22T14:41:06.818866 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.818893 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.819039 #21288]  INFO -- default-ubuntu-1404:     -  div.section_header_red {
-I, [2017-01-22T14:41:06.819159 #21288]  INFO -- default-ubuntu-1404:     -    background-color: #CD214F;
-I, [2017-01-22T14:41:06.819182 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.819196 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.819209 #21288]  INFO -- default-ubuntu-1404:     -  div.section_header_grey {
-I, [2017-01-22T14:41:06.819369 #21288]  INFO -- default-ubuntu-1404:     -    background-color: #9F9386;
-I, [2017-01-22T14:41:06.819390 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.819403 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.819414 #21288]  INFO -- default-ubuntu-1404:     -  .floating_element {
-I, [2017-01-22T14:41:06.819426 #21288]  INFO -- default-ubuntu-1404:     -    position: relative;
-I, [2017-01-22T14:41:06.819437 #21288]  INFO -- default-ubuntu-1404:     -    float: left;
-I, [2017-01-22T14:41:06.819448 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.819458 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.819653 #21288]  INFO -- default-ubuntu-1404:     -  div.table_of_contents_item a,
-I, [2017-01-22T14:41:06.819674 #21288]  INFO -- default-ubuntu-1404:     -  div.content_section_text a {
-I, [2017-01-22T14:41:06.819688 #21288]  INFO -- default-ubuntu-1404:     -    text-decoration: none;
-I, [2017-01-22T14:41:06.819699 #21288]  INFO -- default-ubuntu-1404:     -    font-weight: bold;
-I, [2017-01-22T14:41:06.819710 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.819721 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.819899 #21288]  INFO -- default-ubuntu-1404:     -  div.table_of_contents_item a:link,
-I, [2017-01-22T14:41:06.819928 #21288]  INFO -- default-ubuntu-1404:     -  div.table_of_contents_item a:visited,
-I, [2017-01-22T14:41:06.819943 #21288]  INFO -- default-ubuntu-1404:     -  div.table_of_contents_item a:active {
-I, [2017-01-22T14:41:06.819972 #21288]  INFO -- default-ubuntu-1404:     -    color: #000000;
-I, [2017-01-22T14:41:06.820119 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.820141 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.820154 #21288]  INFO -- default-ubuntu-1404:     -  div.table_of_contents_item a:hover {
-I, [2017-01-22T14:41:06.820166 #21288]  INFO -- default-ubuntu-1404:     -    background-color: #000000;
-I, [2017-01-22T14:41:06.820177 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.820361 #21288]  INFO -- default-ubuntu-1404:     -    color: #FFFFFF;
-I, [2017-01-22T14:41:06.820382 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.820394 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.820406 #21288]  INFO -- default-ubuntu-1404:     -  div.content_section_text a:link,
-I, [2017-01-22T14:41:06.820503 #21288]  INFO -- default-ubuntu-1404:     -  div.content_section_text a:visited,
-I, [2017-01-22T14:41:06.820522 #21288]  INFO -- default-ubuntu-1404:     -   div.content_section_text a:active {
-I, [2017-01-22T14:41:06.820569 #21288]  INFO -- default-ubuntu-1404:     -    background-color: #DCDFE6;
-I, [2017-01-22T14:41:06.820591 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.820605 #21288]  INFO -- default-ubuntu-1404:     -    color: #000000;
-I, [2017-01-22T14:41:06.820618 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.820672 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.820683 #21288]  INFO -- default-ubuntu-1404:     -  div.content_section_text a:hover {
-I, [2017-01-22T14:41:06.820968 #21288]  INFO -- default-ubuntu-1404:     -    background-color: #000000;
-I, [2017-01-22T14:41:06.820997 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.821012 #21288]  INFO -- default-ubuntu-1404:     -    color: #DCDFE6;
-I, [2017-01-22T14:41:06.821025 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.821036 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.821047 #21288]  INFO -- default-ubuntu-1404:     -  div.validator {
-I, [2017-01-22T14:41:06.821251 #21288]  INFO -- default-ubuntu-1404:     -  }
-I, [2017-01-22T14:41:06.821272 #21288]  INFO -- default-ubuntu-1404:     -    </style>
-I, [2017-01-22T14:41:06.821285 #21288]  INFO -- default-ubuntu-1404:     -  </head>
-I, [2017-01-22T14:41:06.821388 #21288]  INFO -- default-ubuntu-1404:     -  <body>
-I, [2017-01-22T14:41:06.821409 #21288]  INFO -- default-ubuntu-1404:     -    <div class="main_page">
-I, [2017-01-22T14:41:06.821422 #21288]  INFO -- default-ubuntu-1404:     -      <div class="page_header floating_element">
-I, [2017-01-22T14:41:06.821435 #21288]  INFO -- default-ubuntu-1404:     -        <img src="/icons/ubuntu-logo.png" alt="Ubuntu Logo" class="floating_element"/>
-I, [2017-01-22T14:41:06.821501 #21288]  INFO -- default-ubuntu-1404:     -        <span class="floating_element">
-I, [2017-01-22T14:41:06.821512 #21288]  INFO -- default-ubuntu-1404:     -          Apache2 Ubuntu Default Page
-I, [2017-01-22T14:41:06.821523 #21288]  INFO -- default-ubuntu-1404:     -        </span>
-I, [2017-01-22T14:41:06.821535 #21288]  INFO -- default-ubuntu-1404:     -      </div>
-I, [2017-01-22T14:41:06.821705 #21288]  INFO -- default-ubuntu-1404:     -<!--      <div class="table_of_contents floating_element">
-I, [2017-01-22T14:41:06.821729 #21288]  INFO -- default-ubuntu-1404:     -        <div class="section_header section_header_grey">
-I, [2017-01-22T14:41:06.821743 #21288]  INFO -- default-ubuntu-1404:     -          TABLE OF CONTENTS
-I, [2017-01-22T14:41:06.821755 #21288]  INFO -- default-ubuntu-1404:     -        </div>
-I, [2017-01-22T14:41:06.821767 #21288]  INFO -- default-ubuntu-1404:     -        <div class="table_of_contents_item floating_element">
-I, [2017-01-22T14:41:06.821941 #21288]  INFO -- default-ubuntu-1404:     -          <a href="#about">About</a>
-I, [2017-01-22T14:41:06.821961 #21288]  INFO -- default-ubuntu-1404:     -        </div>
-I, [2017-01-22T14:41:06.822071 #21288]  INFO -- default-ubuntu-1404:     -        <div class="table_of_contents_item floating_element">
-I, [2017-01-22T14:41:06.822093 #21288]  INFO -- default-ubuntu-1404:     -          <a href="#changes">Changes</a>
-I, [2017-01-22T14:41:06.822106 #21288]  INFO -- default-ubuntu-1404:     -        </div>
-I, [2017-01-22T14:41:06.822119 #21288]  INFO -- default-ubuntu-1404:     -        <div class="table_of_contents_item floating_element">
-I, [2017-01-22T14:41:06.822131 #21288]  INFO -- default-ubuntu-1404:     -          <a href="#scope">Scope</a>
-I, [2017-01-22T14:41:06.822142 #21288]  INFO -- default-ubuntu-1404:     -        </div>
-I, [2017-01-22T14:41:06.822354 #21288]  INFO -- default-ubuntu-1404:     -        <div class="table_of_contents_item floating_element">
-I, [2017-01-22T14:41:06.822387 #21288]  INFO -- default-ubuntu-1404:     -          <a href="#files">Config files</a>
-I, [2017-01-22T14:41:06.822403 #21288]  INFO -- default-ubuntu-1404:     -        </div>
-I, [2017-01-22T14:41:06.822416 #21288]  INFO -- default-ubuntu-1404:     -      </div>
-I, [2017-01-22T14:41:06.822428 #21288]  INFO -- default-ubuntu-1404:     --->
-I, [2017-01-22T14:41:06.822636 #21288]  INFO -- default-ubuntu-1404:     -      <div class="content_section floating_element">
-I, [2017-01-22T14:41:06.822660 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.822673 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.822685 #21288]  INFO -- default-ubuntu-1404:     -        <div class="section_header section_header_red">
-I, [2017-01-22T14:41:06.822697 #21288]  INFO -- default-ubuntu-1404:     -          <div id="about"></div>
-I, [2017-01-22T14:41:06.822709 #21288]  INFO -- default-ubuntu-1404:     -          It works!
-I, [2017-01-22T14:41:06.822897 #21288]  INFO -- default-ubuntu-1404:     -        </div>
-I, [2017-01-22T14:41:06.822920 #21288]  INFO -- default-ubuntu-1404:     -        <div class="content_section_text">
-I, [2017-01-22T14:41:06.822934 #21288]  INFO -- default-ubuntu-1404:     -          <p>
-I, [2017-01-22T14:41:06.822990 #21288]  INFO -- default-ubuntu-1404:     -                This is the default welcome page used to test the correct 
-I, [2017-01-22T14:41:06.823004 #21288]  INFO -- default-ubuntu-1404:     -                operation of the Apache2 server after installation on Ubuntu systems.
-I, [2017-01-22T14:41:06.823121 #21288]  INFO -- default-ubuntu-1404:     -                It is based on the equivalent page on Debian, from which the Ubuntu Apache
-I, [2017-01-22T14:41:06.823149 #21288]  INFO -- default-ubuntu-1404:     -                packaging is derived.
-I, [2017-01-22T14:41:06.823163 #21288]  INFO -- default-ubuntu-1404:     -                If you can read this page, it means that the Apache HTTP server installed at
-I, [2017-01-22T14:41:06.823176 #21288]  INFO -- default-ubuntu-1404:     -                this site is working properly. You should <b>replace this file</b> (located at
-I, [2017-01-22T14:41:06.823188 #21288]  INFO -- default-ubuntu-1404:     -                <tt>/var/www/html/index.html</tt>) before continuing to operate your HTTP server.
-I, [2017-01-22T14:41:06.823398 #21288]  INFO -- default-ubuntu-1404:     -          </p>
-I, [2017-01-22T14:41:06.823424 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.823439 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.823451 #21288]  INFO -- default-ubuntu-1404:     -          <p>
-I, [2017-01-22T14:41:06.823464 #21288]  INFO -- default-ubuntu-1404:     -                If you are a normal user of this web site and don't know what this page is
-I, [2017-01-22T14:41:06.823477 #21288]  INFO -- default-ubuntu-1404:     -                about, this probably means that the site is currently unavailable due to
-I, [2017-01-22T14:41:06.823489 #21288]  INFO -- default-ubuntu-1404:     -                maintenance.
-I, [2017-01-22T14:41:06.823500 #21288]  INFO -- default-ubuntu-1404:     -                If the problem persists, please contact the site's administrator.
-I, [2017-01-22T14:41:06.823696 #21288]  INFO -- default-ubuntu-1404:     -          </p>
-I, [2017-01-22T14:41:06.823717 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.823730 #21288]  INFO -- default-ubuntu-1404:     -        </div>
-I, [2017-01-22T14:41:06.823742 #21288]  INFO -- default-ubuntu-1404:     -        <div class="section_header">
-I, [2017-01-22T14:41:06.823859 #21288]  INFO -- default-ubuntu-1404:     -          <div id="changes"></div>
-I, [2017-01-22T14:41:06.823879 #21288]  INFO -- default-ubuntu-1404:     -                Configuration Overview
-I, [2017-01-22T14:41:06.823892 #21288]  INFO -- default-ubuntu-1404:     -        </div>
-I, [2017-01-22T14:41:06.823904 #21288]  INFO -- default-ubuntu-1404:     -        <div class="content_section_text">
-I, [2017-01-22T14:41:06.823915 #21288]  INFO -- default-ubuntu-1404:     -          <p>
-I, [2017-01-22T14:41:06.823927 #21288]  INFO -- default-ubuntu-1404:     -                Ubuntu's Apache2 default configuration is different from the
-I, [2017-01-22T14:41:06.823939 #21288]  INFO -- default-ubuntu-1404:     -                upstream default configuration, and split into several files optimized for
-I, [2017-01-22T14:41:06.824124 #21288]  INFO -- default-ubuntu-1404:     -                interaction with Ubuntu tools. The configuration system is
-I, [2017-01-22T14:41:06.824149 #21288]  INFO -- default-ubuntu-1404:     -                <b>fully documented in
-I, [2017-01-22T14:41:06.824163 #21288]  INFO -- default-ubuntu-1404:     -                /usr/share/doc/apache2/README.Debian.gz</b>. Refer to this for the full
-I, [2017-01-22T14:41:06.824176 #21288]  INFO -- default-ubuntu-1404:     -                documentation. Documentation for the web server itself can be
-I, [2017-01-22T14:41:06.824188 #21288]  INFO -- default-ubuntu-1404:     -                found by accessing the <a href="/manual">manual</a> if the <tt>apache2-doc</tt>
-I, [2017-01-22T14:41:06.824200 #21288]  INFO -- default-ubuntu-1404:     -                package was installed on this server.
-I, [2017-01-22T14:41:06.824381 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.824430 #21288]  INFO -- default-ubuntu-1404:     -          </p>
-I, [2017-01-22T14:41:06.824455 #21288]  INFO -- default-ubuntu-1404:     -          <p>
-I, [2017-01-22T14:41:06.824470 #21288]  INFO -- default-ubuntu-1404:     -                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
-I, [2017-01-22T14:41:06.824609 #21288]  INFO -- default-ubuntu-1404:     -          </p>
-I, [2017-01-22T14:41:06.824631 #21288]  INFO -- default-ubuntu-1404:     -          <pre>
-I, [2017-01-22T14:41:06.824644 #21288]  INFO -- default-ubuntu-1404:     -/etc/apache2/
-I, [2017-01-22T14:41:06.824656 #21288]  INFO -- default-ubuntu-1404:     -|-- apache2.conf
-I, [2017-01-22T14:41:06.824667 #21288]  INFO -- default-ubuntu-1404:     -|       `--  ports.conf
-I, [2017-01-22T14:41:06.824678 #21288]  INFO -- default-ubuntu-1404:     -|-- mods-enabled
-I, [2017-01-22T14:41:06.824689 #21288]  INFO -- default-ubuntu-1404:     -|       |-- *.load
-I, [2017-01-22T14:41:06.824748 #21288]  INFO -- default-ubuntu-1404:     -|       `-- *.conf
-I, [2017-01-22T14:41:06.824760 #21288]  INFO -- default-ubuntu-1404:     -|-- conf-enabled
-I, [2017-01-22T14:41:06.824770 #21288]  INFO -- default-ubuntu-1404:     -|       `-- *.conf
-I, [2017-01-22T14:41:06.824781 #21288]  INFO -- default-ubuntu-1404:     -|-- sites-enabled
-I, [2017-01-22T14:41:06.824791 #21288]  INFO -- default-ubuntu-1404:     -|       `-- *.conf
-I, [2017-01-22T14:41:06.824802 #21288]  INFO -- default-ubuntu-1404:     -          </pre>
-I, [2017-01-22T14:41:06.824812 #21288]  INFO -- default-ubuntu-1404:     -          <ul>
-I, [2017-01-22T14:41:06.824824 #21288]  INFO -- default-ubuntu-1404:     -                        <li>
-I, [2017-01-22T14:41:06.825082 #21288]  INFO -- default-ubuntu-1404:     -                           <tt>apache2.conf</tt> is the main configuration
-I, [2017-01-22T14:41:06.825106 #21288]  INFO -- default-ubuntu-1404:     -                           file. It puts the pieces together by including all remaining configuration
-I, [2017-01-22T14:41:06.825134 #21288]  INFO -- default-ubuntu-1404:     -                           files when starting up the web server.
-I, [2017-01-22T14:41:06.825258 #21288]  INFO -- default-ubuntu-1404:     -                        </li>
-I, [2017-01-22T14:41:06.825280 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.825295 #21288]  INFO -- default-ubuntu-1404:     -                        <li>
-I, [2017-01-22T14:41:06.825307 #21288]  INFO -- default-ubuntu-1404:     -                           <tt>ports.conf</tt> is always included from the
-I, [2017-01-22T14:41:06.825320 #21288]  INFO -- default-ubuntu-1404:     -                           main configuration file. It is used to determine the listening ports for
-I, [2017-01-22T14:41:06.825506 #21288]  INFO -- default-ubuntu-1404:     -                           incoming connections, and this file can be customized anytime.
-I, [2017-01-22T14:41:06.825529 #21288]  INFO -- default-ubuntu-1404:     -                        </li>
-I, [2017-01-22T14:41:06.825542 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.825554 #21288]  INFO -- default-ubuntu-1404:     -                        <li>
-I, [2017-01-22T14:41:06.825566 #21288]  INFO -- default-ubuntu-1404:     -                           Configuration files in the <tt>mods-enabled/</tt>,
-I, [2017-01-22T14:41:06.825740 #21288]  INFO -- default-ubuntu-1404:     -                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
-I, [2017-01-22T14:41:06.825826 #21288]  INFO -- default-ubuntu-1404:     -                           particular configuration snippets which manage modules, global configuration
-I, [2017-01-22T14:41:06.825846 #21288]  INFO -- default-ubuntu-1404:     -                           fragments, or virtual host configurations, respectively.
-I, [2017-01-22T14:41:06.825860 #21288]  INFO -- default-ubuntu-1404:     -                        </li>
-I, [2017-01-22T14:41:06.825972 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.825992 #21288]  INFO -- default-ubuntu-1404:     -                        <li>
-I, [2017-01-22T14:41:06.826006 #21288]  INFO -- default-ubuntu-1404:     -                           They are activated by symlinking available
-I, [2017-01-22T14:41:06.826020 #21288]  INFO -- default-ubuntu-1404:     -                           configuration files from their respective
-I, [2017-01-22T14:41:06.826032 #21288]  INFO -- default-ubuntu-1404:     -                           *-available/ counterparts. These should be managed
-I, [2017-01-22T14:41:06.826196 #21288]  INFO -- default-ubuntu-1404:     -                           by using our helpers
-I, [2017-01-22T14:41:06.826220 #21288]  INFO -- default-ubuntu-1404:     -                           <tt>
-I, [2017-01-22T14:41:06.826234 #21288]  INFO -- default-ubuntu-1404:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2enmod">a2enmod</a>,
-I, [2017-01-22T14:41:06.826247 #21288]  INFO -- default-ubuntu-1404:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2dismod">a2dismod</a>,
-I, [2017-01-22T14:41:06.826369 #21288]  INFO -- default-ubuntu-1404:     -                           </tt>
-I, [2017-01-22T14:41:06.826390 #21288]  INFO -- default-ubuntu-1404:     -                           <tt>
-I, [2017-01-22T14:41:06.826429 #21288]  INFO -- default-ubuntu-1404:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2ensite">a2ensite</a>,
-I, [2017-01-22T14:41:06.826503 #21288]  INFO -- default-ubuntu-1404:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2dissite">a2dissite</a>,
-I, [2017-01-22T14:41:06.826519 #21288]  INFO -- default-ubuntu-1404:     -                            </tt>
-I, [2017-01-22T14:41:06.826741 #21288]  INFO -- default-ubuntu-1404:     -                                and
-I, [2017-01-22T14:41:06.826783 #21288]  INFO -- default-ubuntu-1404:     -                           <tt>
-I, [2017-01-22T14:41:06.826802 #21288]  INFO -- default-ubuntu-1404:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2enconf">a2enconf</a>,
-I, [2017-01-22T14:41:06.826817 #21288]  INFO -- default-ubuntu-1404:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2disconf">a2disconf</a>
-I, [2017-01-22T14:41:06.827035 #21288]  INFO -- default-ubuntu-1404:     -                           </tt>. See their respective man pages for detailed information.
-I, [2017-01-22T14:41:06.827063 #21288]  INFO -- default-ubuntu-1404:     -                        </li>
-I, [2017-01-22T14:41:06.827078 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.827237 #21288]  INFO -- default-ubuntu-1404:     -                        <li>
-I, [2017-01-22T14:41:06.827379 #21288]  INFO -- default-ubuntu-1404:     -                           The binary is called apache2. Due to the use of
-I, [2017-01-22T14:41:06.827405 #21288]  INFO -- default-ubuntu-1404:     -                           environment variables, in the default configuration, apache2 needs to be
-I, [2017-01-22T14:41:06.827430 #21288]  INFO -- default-ubuntu-1404:     -                           started/stopped with <tt>/etc/init.d/apache2</tt> or <tt>apache2ctl</tt>.
-I, [2017-01-22T14:41:06.827445 #21288]  INFO -- default-ubuntu-1404:     -                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
-I, [2017-01-22T14:41:06.827457 #21288]  INFO -- default-ubuntu-1404:     -                           default configuration.
-I, [2017-01-22T14:41:06.827470 #21288]  INFO -- default-ubuntu-1404:     -                        </li>
-I, [2017-01-22T14:41:06.827481 #21288]  INFO -- default-ubuntu-1404:     -          </ul>
-I, [2017-01-22T14:41:06.827675 #21288]  INFO -- default-ubuntu-1404:     -        </div>
-I, [2017-01-22T14:41:06.827741 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.827769 #21288]  INFO -- default-ubuntu-1404:     -        <div class="section_header">
-I, [2017-01-22T14:41:06.827785 #21288]  INFO -- default-ubuntu-1404:     -            <div id="docroot"></div>
-I, [2017-01-22T14:41:06.827842 #21288]  INFO -- default-ubuntu-1404:     -                Document Roots
-I, [2017-01-22T14:41:06.827854 #21288]  INFO -- default-ubuntu-1404:     -        </div>
-I, [2017-01-22T14:41:06.827866 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.827877 #21288]  INFO -- default-ubuntu-1404:     -        <div class="content_section_text">
-I, [2017-01-22T14:41:06.828058 #21288]  INFO -- default-ubuntu-1404:     -            <p>
-I, [2017-01-22T14:41:06.828081 #21288]  INFO -- default-ubuntu-1404:     -                By default, Ubuntu does not allow access through the web browser to
-I, [2017-01-22T14:41:06.828096 #21288]  INFO -- default-ubuntu-1404:     -                <em>any</em> file apart of those located in <tt>/var/www</tt>,
-I, [2017-01-22T14:41:06.828109 #21288]  INFO -- default-ubuntu-1404:     -                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html">public_html</a>
-I, [2017-01-22T14:41:06.828122 #21288]  INFO -- default-ubuntu-1404:     -                directories (when enabled) and <tt>/usr/share</tt> (for web
-I, [2017-01-22T14:41:06.828174 #21288]  INFO -- default-ubuntu-1404:     -                applications). If your site is using a web document root
-I, [2017-01-22T14:41:06.828315 #21288]  INFO -- default-ubuntu-1404:     -                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
-I, [2017-01-22T14:41:06.828337 #21288]  INFO -- default-ubuntu-1404:     -                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
-I, [2017-01-22T14:41:06.828351 #21288]  INFO -- default-ubuntu-1404:     -            </p>
-I, [2017-01-22T14:41:06.828363 #21288]  INFO -- default-ubuntu-1404:     -            <p>
-I, [2017-01-22T14:41:06.828525 #21288]  INFO -- default-ubuntu-1404:     -                The default Ubuntu document root is <tt>/var/www/html</tt>. You
-I, [2017-01-22T14:41:06.828546 #21288]  INFO -- default-ubuntu-1404:     -                can make your own virtual hosts under /var/www. This is different
-I, [2017-01-22T14:41:06.828559 #21288]  INFO -- default-ubuntu-1404:     -                to previous releases which provides better security out of the box.
-I, [2017-01-22T14:41:06.828571 #21288]  INFO -- default-ubuntu-1404:     -            </p>
-I, [2017-01-22T14:41:06.828670 #21288]  INFO -- default-ubuntu-1404:     -        </div>
-I, [2017-01-22T14:41:06.828708 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.828729 #21288]  INFO -- default-ubuntu-1404:     -        <div class="section_header">
-I, [2017-01-22T14:41:06.828744 #21288]  INFO -- default-ubuntu-1404:     -          <div id="bugs"></div>
-I, [2017-01-22T14:41:06.828925 #21288]  INFO -- default-ubuntu-1404:     -                Reporting Problems
-I, [2017-01-22T14:41:06.828947 #21288]  INFO -- default-ubuntu-1404:     -        </div>
-I, [2017-01-22T14:41:06.828962 #21288]  INFO -- default-ubuntu-1404:     -        <div class="content_section_text">
-I, [2017-01-22T14:41:06.828974 #21288]  INFO -- default-ubuntu-1404:     -          <p>
-I, [2017-01-22T14:41:06.828986 #21288]  INFO -- default-ubuntu-1404:     -                Please use the <tt>ubuntu-bug</tt> tool to report bugs in the
-I, [2017-01-22T14:41:06.829097 #21288]  INFO -- default-ubuntu-1404:     -                Apache2 package with Ubuntu. However, check <a
-I, [2017-01-22T14:41:06.829117 #21288]  INFO -- default-ubuntu-1404:     -                href="https://bugs.launchpad.net/ubuntu/+source/apache2">existing
-I, [2017-01-22T14:41:06.829131 #21288]  INFO -- default-ubuntu-1404:     -                bug reports</a> before reporting a new bug.
-I, [2017-01-22T14:41:06.829143 #21288]  INFO -- default-ubuntu-1404:     -          </p>
-I, [2017-01-22T14:41:06.829282 #21288]  INFO -- default-ubuntu-1404:     -          <p>
-I, [2017-01-22T14:41:06.829302 #21288]  INFO -- default-ubuntu-1404:     -                Please report bugs specific to modules (such as PHP and others)
-I, [2017-01-22T14:41:06.829316 #21288]  INFO -- default-ubuntu-1404:     -                to respective packages, not to the web server itself.
-I, [2017-01-22T14:41:06.829404 #21288]  INFO -- default-ubuntu-1404:     -          </p>
-I, [2017-01-22T14:41:06.829422 #21288]  INFO -- default-ubuntu-1404:     -        </div>
-I, [2017-01-22T14:41:06.829435 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.829560 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.829578 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.829590 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.829601 #21288]  INFO -- default-ubuntu-1404:     -      </div>
-I, [2017-01-22T14:41:06.829612 #21288]  INFO -- default-ubuntu-1404:     -    </div>
-I, [2017-01-22T14:41:06.829709 #21288]  INFO -- default-ubuntu-1404:     -    <div class="validator">
-I, [2017-01-22T14:41:06.829727 #21288]  INFO -- default-ubuntu-1404:     -    <p>
-I, [2017-01-22T14:41:06.829845 #21288]  INFO -- default-ubuntu-1404:     -      <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
-I, [2017-01-22T14:41:06.829864 #21288]  INFO -- default-ubuntu-1404:     -    </p>
-I, [2017-01-22T14:41:06.829877 #21288]  INFO -- default-ubuntu-1404:     -    </div>
-I, [2017-01-22T14:41:06.829889 #21288]  INFO -- default-ubuntu-1404:     -  </body>
-I, [2017-01-22T14:41:06.829900 #21288]  INFO -- default-ubuntu-1404:     +<html>
-I, [2017-01-22T14:41:06.829998 #21288]  INFO -- default-ubuntu-1404:     +    <h1>
-I, [2017-01-22T14:41:06.830016 #21288]  INFO -- default-ubuntu-1404:     +        <body>
-I, [2017-01-22T14:41:06.830029 #21288]  INFO -- default-ubuntu-1404:     +            <h1>Hello World! This is a template on default-ubuntu-1404</h1>
-I, [2017-01-22T14:41:06.830055 #21288]  INFO -- default-ubuntu-1404:     +        </body>
-I, [2017-01-22T14:41:06.830068 #21288]  INFO -- default-ubuntu-1404:     +    </h1>
-I, [2017-01-22T14:41:06.830121 #21288]  INFO -- default-ubuntu-1404:      </html>
-I, [2017-01-22T14:41:06.831385 #21288]  INFO -- default-ubuntu-1404:     -
-I, [2017-01-22T14:41:06.831617 #21288]  INFO -- default-ubuntu-1404:     - change owner from 'root' to 'web_admin'
-I, [2017-01-22T14:41:06.832503 #21288]  INFO -- default-ubuntu-1404:     - change group from 'root' to 'web_admin'
-I, [2017-01-22T14:41:06.860063 #21288]  INFO -- default-ubuntu-1404: 
-I, [2017-01-22T14:41:06.860255 #21288]  INFO -- default-ubuntu-1404: Running handlers:
-I, [2017-01-22T14:41:06.860431 #21288]  INFO -- default-ubuntu-1404: Running handlers complete
-I, [2017-01-22T14:41:06.860703 #21288]  INFO -- default-ubuntu-1404: Chef Client finished, 6/11 resources updated in 22 seconds
-I, [2017-01-22T14:41:06.933915 #21288]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (0m31.87s).
-I, [2017-01-22T14:41:06.935796 #21288]  INFO -- default-ubuntu-1404: -----> Setting up <default-ubuntu-1404>...
-I, [2017-01-22T14:41:06.941524 #21288]  INFO -- default-ubuntu-1404: Finished setting up <default-ubuntu-1404> (0m0.00s).
-I, [2017-01-22T14:41:06.941627 #21288]  INFO -- default-ubuntu-1404: -----> Verifying <default-ubuntu-1404>...
-I, [2017-01-22T14:41:07.298918 #21288]  INFO -- default-ubuntu-1404: Loaded  
-I, [2017-01-22T14:41:07.484691 #21288]  INFO -- default-ubuntu-1404: Finished verifying <default-ubuntu-1404> (0m0.54s).
-I, [2017-01-22T14:41:07.485147 #21288]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
-I, [2017-01-22T14:41:10.463568 #21288]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
-I, [2017-01-22T14:41:12.045392 #21288]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
-I, [2017-01-22T14:41:12.322979 #21288]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
-I, [2017-01-22T14:41:12.324296 #21288]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m4.84s).
-I, [2017-01-22T14:41:12.326314 #21288]  INFO -- default-ubuntu-1404: Finished testing <default-ubuntu-1404> (1m9.23s).
+I, [2017-01-22T16:44:52.969812 #23419]  INFO -- default-ubuntu-1404: -----> Cleaning up any prior instances of <default-ubuntu-1404>
+I, [2017-01-22T16:44:52.970443 #23419]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2017-01-22T16:44:55.877946 #23419]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2017-01-22T16:44:57.512121 #23419]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2017-01-22T16:44:57.805208 #23419]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2017-01-22T16:44:57.807549 #23419]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m4.83s).
+I, [2017-01-22T16:44:57.808220 #23419]  INFO -- default-ubuntu-1404: -----> Testing <default-ubuntu-1404>
+I, [2017-01-22T16:44:57.808343 #23419]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2017-01-22T16:44:59.434210 #23419]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2017-01-22T16:44:59.581595 #23419]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'bento/ubuntu-14.04'...
+I, [2017-01-22T16:45:07.555627 #23419]  INFO -- default-ubuntu-1404: [KProgress: 10%[KProgress: 20%[KProgress: 30%[KProgress: 40%[KProgress: 60%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2017-01-22T16:45:07.682808 #23419]  INFO -- default-ubuntu-1404: ==> default: Checking if box 'bento/ubuntu-14.04' is up to date...
+I, [2017-01-22T16:45:08.786568 #23419]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: kitchen-learn-test-kitchen-default-ubuntu-1404_default_1485132308745_80577
+I, [2017-01-22T16:45:09.292383 #23419]  INFO -- default-ubuntu-1404: ==> default: Fixed port collision for 22 => 2222. Now on port 2201.
+I, [2017-01-22T16:45:09.547018 #23419]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2017-01-22T16:45:09.591997 #23419]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2017-01-22T16:45:09.592257 #23419]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2017-01-22T16:45:09.641138 #23419]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2017-01-22T16:45:09.710023 #23419]  INFO -- default-ubuntu-1404:     default: 22 (guest) => 2201 (host) (adapter 1)
+I, [2017-01-22T16:45:09.848641 #23419]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2017-01-22T16:45:10.051484 #23419]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2017-01-22T16:45:10.342090 #23419]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2201
+I, [2017-01-22T16:45:10.342214 #23419]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2017-01-22T16:45:10.342312 #23419]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2017-01-22T16:45:26.093538 #23419]  INFO -- default-ubuntu-1404:     default: 
+I, [2017-01-22T16:45:26.093614 #23419]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2017-01-22T16:45:26.093645 #23419]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2017-01-22T16:45:26.489594 #23419]  INFO -- default-ubuntu-1404:     default: 
+I, [2017-01-22T16:45:26.489664 #23419]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2017-01-22T16:45:26.531681 #23419]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if it's present...
+I, [2017-01-22T16:45:26.572631 #23419]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2017-01-22T16:45:27.113706 #23419]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2017-01-22T16:45:27.114069 #23419]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2017-01-22T16:45:27.158289 #23419]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2017-01-22T16:45:27.301005 #23419]  INFO -- default-ubuntu-1404: ==> default: Mounting shared folders...
+I, [2017-01-22T16:45:27.301515 #23419]  INFO -- default-ubuntu-1404:     default: /tmp/omnibus/cache => /Users/darren/workspace/environments/dwin1000test/.kitchen/cache
+I, [2017-01-22T16:45:27.574901 #23419]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2017-01-22T16:45:29.911442 #23419]  INFO -- default-ubuntu-1404: [SSH] Established
+I, [2017-01-22T16:45:29.911713 #23419]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2017-01-22T16:45:29.912767 #23419]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m32.10s).
+I, [2017-01-22T16:45:29.913098 #23419]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2017-01-22T16:45:29.913754 #23419]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2017-01-22T16:45:29.913855 #23419]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2017-01-22T16:45:29.914246 #23419]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 5.2.0...
+I, [2017-01-22T16:45:32.854066 #23419]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2017-01-22T16:45:32.866766 #23419]  INFO -- default-ubuntu-1404: Preparing validation.pem
+I, [2017-01-22T16:45:32.867438 #23419]  INFO -- default-ubuntu-1404: Preparing client.rb
+I, [2017-01-22T16:45:32.877517 #23419]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2017-01-22T16:45:32.877900 #23419]  INFO -- default-ubuntu-1404: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2017-01-22T16:45:32.878192 #23419]  INFO -- default-ubuntu-1404: Trying wget...
+I, [2017-01-22T16:45:33.238721 #23419]  INFO -- default-ubuntu-1404: Download complete.
+I, [2017-01-22T16:45:33.251304 #23419]  INFO -- default-ubuntu-1404: ubuntu 14.04 x86_64
+I, [2017-01-22T16:45:33.251493 #23419]  INFO -- default-ubuntu-1404: Getting information for chef stable  for ubuntu...
+I, [2017-01-22T16:45:33.251675 #23419]  INFO -- default-ubuntu-1404: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=14.04&m=x86_64
+I, [2017-01-22T16:45:33.251836 #23419]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1482/metadata.txt
+I, [2017-01-22T16:45:33.252316 #23419]  INFO -- default-ubuntu-1404: trying wget...
+I, [2017-01-22T16:45:33.626164 #23419]  INFO -- default-ubuntu-1404: sha1	10b9026d57005aaf31289aec650931a02b5347d3
+I, [2017-01-22T16:45:33.626609 #23419]  INFO -- default-ubuntu-1404: sha256	de5991b073fb22aa295fd0142f5e4ed3ca7da6ffe2c3fdcb01da29e4cdd0bd04
+I, [2017-01-22T16:45:33.627017 #23419]  INFO -- default-ubuntu-1404: url	https://packages.chef.io/files/stable/chef/12.17.44/ubuntu/14.04/chef_12.17.44-1_amd64.deb
+I, [2017-01-22T16:45:33.627248 #23419]  INFO -- default-ubuntu-1404: version	12.17.44
+I, [2017-01-22T16:45:33.628614 #23419]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
+I, [2017-01-22T16:45:33.633921 #23419]  INFO -- default-ubuntu-1404: /tmp/omnibus/cache/chef_12.17.44-1_amd64.deb already exists, verifiying checksum...
+I, [2017-01-22T16:45:33.634083 #23419]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2017-01-22T16:45:33.992130 #23419]  INFO -- default-ubuntu-1404: checksum compare succeeded, using existing file!
+I, [2017-01-22T16:45:33.992281 #23419]  INFO -- default-ubuntu-1404: 
+I, [2017-01-22T16:45:33.992451 #23419]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2017-01-22T16:45:33.992534 #23419]  INFO -- default-ubuntu-1404: 
+I, [2017-01-22T16:45:33.992708 #23419]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2017-01-22T16:45:33.992903 #23419]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2017-01-22T16:45:33.993147 #23419]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major releases.
+I, [2017-01-22T16:45:33.993471 #23419]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2017-01-22T16:45:33.993730 #23419]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2017-01-22T16:45:33.993864 #23419]  INFO -- default-ubuntu-1404: 
+I, [2017-01-22T16:45:33.994041 #23419]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2017-01-22T16:45:33.994194 #23419]  INFO -- default-ubuntu-1404: 
+I, [2017-01-22T16:45:33.994430 #23419]  INFO -- default-ubuntu-1404: Installing chef 
+I, [2017-01-22T16:45:33.994609 #23419]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2017-01-22T16:45:34.044266 #23419]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2017-01-22T16:45:34.183748 #23419]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 35284 files and directories currently installed.)
+I, [2017-01-22T16:45:34.185444 #23419]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_12.17.44-1_amd64.deb ...
+I, [2017-01-22T16:45:34.190421 #23419]  INFO -- default-ubuntu-1404: Unpacking chef (12.17.44-1) ...
+I, [2017-01-22T16:45:39.178048 #23419]  INFO -- default-ubuntu-1404: Setting up chef (12.17.44-1) ...
+I, [2017-01-22T16:45:39.244056 #23419]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2017-01-22T16:45:39.275511 #23419]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2017-01-22T16:45:40.579683 #23419]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.17.44
+I, [2017-01-22T16:45:42.198729 #23419]  INFO -- default-ubuntu-1404: Creating a new client identity for default-ubuntu-1404 using the validator key.
+I, [2017-01-22T16:45:42.292813 #23419]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["learn-test-kitchen::default"]
+I, [2017-01-22T16:45:42.378716 #23419]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
+I, [2017-01-22T16:45:42.384057 #23419]  INFO -- default-ubuntu-1404:   - learn-test-kitchen (0.3.2)
+I, [2017-01-22T16:45:42.384469 #23419]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
+I, [2017-01-22T16:45:42.385020 #23419]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2017-01-22T16:45:42.389358 #23419]  INFO -- default-ubuntu-1404: Converging 6 resources
+I, [2017-01-22T16:45:42.389852 #23419]  INFO -- default-ubuntu-1404: Recipe: learn-test-kitchen::default
+I, [2017-01-22T16:45:42.394385 #23419]  INFO -- default-ubuntu-1404:   * apt_update[Update the apt cache daily] action periodic
+I, [2017-01-22T16:45:42.394908 #23419]  INFO -- default-ubuntu-1404:     - update new lists of packages
+I, [2017-01-22T16:45:42.399396 #23419]  INFO -- default-ubuntu-1404:     * directory[/var/lib/apt/periodic] action create (up to date)
+I, [2017-01-22T16:45:42.401206 #23419]  INFO -- default-ubuntu-1404:     * directory[/etc/apt/apt.conf.d] action create (up to date)
+I, [2017-01-22T16:45:42.402985 #23419]  INFO -- default-ubuntu-1404:     * file[/etc/apt/apt.conf.d/15update-stamp] action create_if_missing (up to date)
+I, [2017-01-22T16:45:51.719197 #23419]  INFO -- default-ubuntu-1404:     * execute[apt-get -q update] action run
+I, [2017-01-22T16:45:51.719264 #23419]  INFO -- default-ubuntu-1404:       - execute apt-get -q update
+I, [2017-01-22T16:45:51.719311 #23419]  INFO -- default-ubuntu-1404:   
+I, [2017-01-22T16:46:01.752956 #23419]  INFO -- default-ubuntu-1404:   * apt_package[apache2] action install
+I, [2017-01-22T16:46:01.754482 #23419]  INFO -- default-ubuntu-1404:     - install version 2.4.7-1ubuntu4.13 of package apache2
+I, [2017-01-22T16:46:01.808275 #23419]  INFO -- default-ubuntu-1404:   * service[apache2] action enable (up to date)
+I, [2017-01-22T16:46:01.833594 #23419]  INFO -- default-ubuntu-1404:   * service[apache2] action start (up to date)
+I, [2017-01-22T16:46:01.881760 #23419]  INFO -- default-ubuntu-1404:   * group[web_admin] action create
+I, [2017-01-22T16:46:01.882186 #23419]  INFO -- default-ubuntu-1404:     - create group web_admin
+I, [2017-01-22T16:46:01.930273 #23419]  INFO -- default-ubuntu-1404:   * linux_user[web_admin] action create
+I, [2017-01-22T16:46:01.930352 #23419]  INFO -- default-ubuntu-1404:     - create user web_admin
+I, [2017-01-22T16:46:01.940028 #23419]  INFO -- default-ubuntu-1404:   * template[/var/www/html/index.html] action create
+I, [2017-01-22T16:46:01.940564 #23419]  INFO -- default-ubuntu-1404:     - update content in file /var/www/html/index.html from 538f31 to 4b8ea2
+I, [2017-01-22T16:46:01.941301 #23419]  INFO -- default-ubuntu-1404:     --- /var/www/html/index.html	2017-01-23 00:45:59.542019999 +0000
+I, [2017-01-22T16:46:01.941827 #23419]  INFO -- default-ubuntu-1404:     +++ /var/www/html/.chef-index20170123-1573-1nxqev1.html	2017-01-23 00:46:01.950019999 +0000
+I, [2017-01-22T16:46:01.942407 #23419]  INFO -- default-ubuntu-1404:     @@ -1,379 +1,8 @@
+I, [2017-01-22T16:46:01.942765 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.943179 #23419]  INFO -- default-ubuntu-1404:     -<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+I, [2017-01-22T16:46:01.943475 #23419]  INFO -- default-ubuntu-1404:     -<html xmlns="http://www.w3.org/1999/xhtml">
+I, [2017-01-22T16:46:01.943882 #23419]  INFO -- default-ubuntu-1404:     -  <!--
+I, [2017-01-22T16:46:01.944227 #23419]  INFO -- default-ubuntu-1404:     -    Modified from the Debian original for Ubuntu
+I, [2017-01-22T16:46:01.944569 #23419]  INFO -- default-ubuntu-1404:     -    Last updated: 2014-03-19
+I, [2017-01-22T16:46:01.945003 #23419]  INFO -- default-ubuntu-1404:     -    See: https://launchpad.net/bugs/1288690
+I, [2017-01-22T16:46:01.945031 #23419]  INFO -- default-ubuntu-1404:     -  -->
+I, [2017-01-22T16:46:01.945048 #23419]  INFO -- default-ubuntu-1404:     -  <head>
+I, [2017-01-22T16:46:01.945074 #23419]  INFO -- default-ubuntu-1404:     -    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+I, [2017-01-22T16:46:01.945100 #23419]  INFO -- default-ubuntu-1404:     -    <title>Apache2 Ubuntu Default Page: It works</title>
+I, [2017-01-22T16:46:01.945121 #23419]  INFO -- default-ubuntu-1404:     -    <style type="text/css" media="screen">
+I, [2017-01-22T16:46:01.945424 #23419]  INFO -- default-ubuntu-1404:     -  * {
+I, [2017-01-22T16:46:01.945460 #23419]  INFO -- default-ubuntu-1404:     -    margin: 0px 0px 0px 0px;
+I, [2017-01-22T16:46:01.945709 #23419]  INFO -- default-ubuntu-1404:     -    padding: 0px 0px 0px 0px;
+I, [2017-01-22T16:46:01.945751 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.945767 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.945975 #23419]  INFO -- default-ubuntu-1404:     -  body, html {
+I, [2017-01-22T16:46:01.946000 #23419]  INFO -- default-ubuntu-1404:     -    padding: 3px 3px 3px 3px;
+I, [2017-01-22T16:46:01.946014 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.946026 #23419]  INFO -- default-ubuntu-1404:     -    background-color: #D8DBE2;
+I, [2017-01-22T16:46:01.946174 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.946200 #23419]  INFO -- default-ubuntu-1404:     -    font-family: Verdana, sans-serif;
+I, [2017-01-22T16:46:01.946225 #23419]  INFO -- default-ubuntu-1404:     -    font-size: 11pt;
+I, [2017-01-22T16:46:01.946423 #23419]  INFO -- default-ubuntu-1404:     -    text-align: center;
+I, [2017-01-22T16:46:01.946446 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.946460 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.946472 #23419]  INFO -- default-ubuntu-1404:     -  div.main_page {
+I, [2017-01-22T16:46:01.946484 #23419]  INFO -- default-ubuntu-1404:     -    position: relative;
+I, [2017-01-22T16:46:01.946495 #23419]  INFO -- default-ubuntu-1404:     -    display: table;
+I, [2017-01-22T16:46:01.946507 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.946663 #23419]  INFO -- default-ubuntu-1404:     -    width: 800px;
+I, [2017-01-22T16:46:01.946685 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.946736 #23419]  INFO -- default-ubuntu-1404:     -    margin-bottom: 3px;
+I, [2017-01-22T16:46:01.946751 #23419]  INFO -- default-ubuntu-1404:     -    margin-left: auto;
+I, [2017-01-22T16:46:01.946923 #23419]  INFO -- default-ubuntu-1404:     -    margin-right: auto;
+I, [2017-01-22T16:46:01.946956 #23419]  INFO -- default-ubuntu-1404:     -    padding: 0px 0px 0px 0px;
+I, [2017-01-22T16:46:01.947168 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.947207 #23419]  INFO -- default-ubuntu-1404:     -    border-width: 2px;
+I, [2017-01-22T16:46:01.947235 #23419]  INFO -- default-ubuntu-1404:     -    border-color: #212738;
+I, [2017-01-22T16:46:01.947458 #23419]  INFO -- default-ubuntu-1404:     -    border-style: solid;
+I, [2017-01-22T16:46:01.947490 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.947517 #23419]  INFO -- default-ubuntu-1404:     -    background-color: #FFFFFF;
+I, [2017-01-22T16:46:01.947541 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.947567 #23419]  INFO -- default-ubuntu-1404:     -    text-align: center;
+I, [2017-01-22T16:46:01.947588 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.947600 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.947854 #23419]  INFO -- default-ubuntu-1404:     -  div.page_header {
+I, [2017-01-22T16:46:01.947878 #23419]  INFO -- default-ubuntu-1404:     -    height: 99px;
+I, [2017-01-22T16:46:01.947892 #23419]  INFO -- default-ubuntu-1404:     -    width: 100%;
+I, [2017-01-22T16:46:01.947904 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.947916 #23419]  INFO -- default-ubuntu-1404:     -    background-color: #F5F6F7;
+I, [2017-01-22T16:46:01.947927 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.948148 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.948186 #23419]  INFO -- default-ubuntu-1404:     -  div.page_header span {
+I, [2017-01-22T16:46:01.948211 #23419]  INFO -- default-ubuntu-1404:     -    margin: 15px 0px 0px 50px;
+I, [2017-01-22T16:46:01.948227 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.948294 #23419]  INFO -- default-ubuntu-1404:     -    font-size: 180%;
+I, [2017-01-22T16:46:01.948315 #23419]  INFO -- default-ubuntu-1404:     -    font-weight: bold;
+I, [2017-01-22T16:46:01.948330 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.948356 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.948391 #23419]  INFO -- default-ubuntu-1404:     -  div.page_header img {
+I, [2017-01-22T16:46:01.948698 #23419]  INFO -- default-ubuntu-1404:     -    margin: 3px 0px 0px 40px;
+I, [2017-01-22T16:46:01.948774 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.948804 #23419]  INFO -- default-ubuntu-1404:     -    border: 0px 0px 0px;
+I, [2017-01-22T16:46:01.948823 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.948891 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.948910 #23419]  INFO -- default-ubuntu-1404:     -  div.table_of_contents {
+I, [2017-01-22T16:46:01.949107 #23419]  INFO -- default-ubuntu-1404:     -    clear: left;
+I, [2017-01-22T16:46:01.949150 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.949178 #23419]  INFO -- default-ubuntu-1404:     -    min-width: 200px;
+I, [2017-01-22T16:46:01.949489 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.949521 #23419]  INFO -- default-ubuntu-1404:     -    margin: 3px 3px 3px 3px;
+I, [2017-01-22T16:46:01.949539 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.949554 #23419]  INFO -- default-ubuntu-1404:     -    background-color: #FFFFFF;
+I, [2017-01-22T16:46:01.949568 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.949780 #23419]  INFO -- default-ubuntu-1404:     -    text-align: left;
+I, [2017-01-22T16:46:01.949810 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.949828 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.949845 #23419]  INFO -- default-ubuntu-1404:     -  div.table_of_contents_item {
+I, [2017-01-22T16:46:01.949860 #23419]  INFO -- default-ubuntu-1404:     -    clear: left;
+I, [2017-01-22T16:46:01.949877 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.949892 #23419]  INFO -- default-ubuntu-1404:     -    width: 100%;
+I, [2017-01-22T16:46:01.949908 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.950267 #23419]  INFO -- default-ubuntu-1404:     -    margin: 4px 0px 0px 0px;
+I, [2017-01-22T16:46:01.950341 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.950377 #23419]  INFO -- default-ubuntu-1404:     -    background-color: #FFFFFF;
+I, [2017-01-22T16:46:01.950395 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.950413 #23419]  INFO -- default-ubuntu-1404:     -    color: #000000;
+I, [2017-01-22T16:46:01.950826 #23419]  INFO -- default-ubuntu-1404:     -    text-align: left;
+I, [2017-01-22T16:46:01.950858 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.950877 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.950893 #23419]  INFO -- default-ubuntu-1404:     -  div.table_of_contents_item a {
+I, [2017-01-22T16:46:01.950908 #23419]  INFO -- default-ubuntu-1404:     -    margin: 6px 0px 0px 6px;
+I, [2017-01-22T16:46:01.951093 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.951140 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.951454 #23419]  INFO -- default-ubuntu-1404:     -  div.content_section {
+I, [2017-01-22T16:46:01.951501 #23419]  INFO -- default-ubuntu-1404:     -    margin: 3px 3px 3px 3px;
+I, [2017-01-22T16:46:01.951525 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.951541 #23419]  INFO -- default-ubuntu-1404:     -    background-color: #FFFFFF;
+I, [2017-01-22T16:46:01.951742 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.951772 #23419]  INFO -- default-ubuntu-1404:     -    text-align: left;
+I, [2017-01-22T16:46:01.951788 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.951800 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.951847 #23419]  INFO -- default-ubuntu-1404:     -  div.content_section_text {
+I, [2017-01-22T16:46:01.951860 #23419]  INFO -- default-ubuntu-1404:     -    padding: 4px 8px 4px 8px;
+I, [2017-01-22T16:46:01.951871 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.951883 #23419]  INFO -- default-ubuntu-1404:     -    color: #000000;
+I, [2017-01-22T16:46:01.951894 #23419]  INFO -- default-ubuntu-1404:     -    font-size: 100%;
+I, [2017-01-22T16:46:01.951905 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.951916 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.951927 #23419]  INFO -- default-ubuntu-1404:     -  div.content_section_text pre {
+I, [2017-01-22T16:46:01.952186 #23419]  INFO -- default-ubuntu-1404:     -    margin: 8px 0px 8px 0px;
+I, [2017-01-22T16:46:01.952216 #23419]  INFO -- default-ubuntu-1404:     -    padding: 8px 8px 8px 8px;
+I, [2017-01-22T16:46:01.952236 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.952249 #23419]  INFO -- default-ubuntu-1404:     -    border-width: 1px;
+I, [2017-01-22T16:46:01.952260 #23419]  INFO -- default-ubuntu-1404:     -    border-style: dotted;
+I, [2017-01-22T16:46:01.952286 #23419]  INFO -- default-ubuntu-1404:     -    border-color: #000000;
+I, [2017-01-22T16:46:01.952561 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.952596 #23419]  INFO -- default-ubuntu-1404:     -    background-color: #F5F6F7;
+I, [2017-01-22T16:46:01.952616 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.952830 #23419]  INFO -- default-ubuntu-1404:     -    font-style: italic;
+I, [2017-01-22T16:46:01.952886 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.952916 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.952933 #23419]  INFO -- default-ubuntu-1404:     -  div.content_section_text p {
+I, [2017-01-22T16:46:01.952946 #23419]  INFO -- default-ubuntu-1404:     -    margin-bottom: 6px;
+I, [2017-01-22T16:46:01.952958 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.952969 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.952981 #23419]  INFO -- default-ubuntu-1404:     -  div.content_section_text ul, div.content_section_text li {
+I, [2017-01-22T16:46:01.952993 #23419]  INFO -- default-ubuntu-1404:     -    padding: 4px 8px 4px 16px;
+I, [2017-01-22T16:46:01.953371 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.953397 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.953422 #23419]  INFO -- default-ubuntu-1404:     -  div.section_header {
+I, [2017-01-22T16:46:01.953440 #23419]  INFO -- default-ubuntu-1404:     -    padding: 3px 6px 3px 6px;
+I, [2017-01-22T16:46:01.953452 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.953464 #23419]  INFO -- default-ubuntu-1404:     -    background-color: #8E9CB2;
+I, [2017-01-22T16:46:01.953480 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.953504 #23419]  INFO -- default-ubuntu-1404:     -    color: #FFFFFF;
+I, [2017-01-22T16:46:01.953526 #23419]  INFO -- default-ubuntu-1404:     -    font-weight: bold;
+I, [2017-01-22T16:46:01.953858 #23419]  INFO -- default-ubuntu-1404:     -    font-size: 112%;
+I, [2017-01-22T16:46:01.953882 #23419]  INFO -- default-ubuntu-1404:     -    text-align: center;
+I, [2017-01-22T16:46:01.954149 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.954328 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.954358 #23419]  INFO -- default-ubuntu-1404:     -  div.section_header_red {
+I, [2017-01-22T16:46:01.954375 #23419]  INFO -- default-ubuntu-1404:     -    background-color: #CD214F;
+I, [2017-01-22T16:46:01.954538 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.954717 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.954747 #23419]  INFO -- default-ubuntu-1404:     -  div.section_header_grey {
+I, [2017-01-22T16:46:01.954764 #23419]  INFO -- default-ubuntu-1404:     -    background-color: #9F9386;
+I, [2017-01-22T16:46:01.954778 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.954987 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.955163 #23419]  INFO -- default-ubuntu-1404:     -  .floating_element {
+I, [2017-01-22T16:46:01.955191 #23419]  INFO -- default-ubuntu-1404:     -    position: relative;
+I, [2017-01-22T16:46:01.955207 #23419]  INFO -- default-ubuntu-1404:     -    float: left;
+I, [2017-01-22T16:46:01.955221 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.955235 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.955254 #23419]  INFO -- default-ubuntu-1404:     -  div.table_of_contents_item a,
+I, [2017-01-22T16:46:01.955523 #23419]  INFO -- default-ubuntu-1404:     -  div.content_section_text a {
+I, [2017-01-22T16:46:01.955555 #23419]  INFO -- default-ubuntu-1404:     -    text-decoration: none;
+I, [2017-01-22T16:46:01.955583 #23419]  INFO -- default-ubuntu-1404:     -    font-weight: bold;
+I, [2017-01-22T16:46:01.955609 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.955629 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.955663 #23419]  INFO -- default-ubuntu-1404:     -  div.table_of_contents_item a:link,
+I, [2017-01-22T16:46:01.955678 #23419]  INFO -- default-ubuntu-1404:     -  div.table_of_contents_item a:visited,
+I, [2017-01-22T16:46:01.955912 #23419]  INFO -- default-ubuntu-1404:     -  div.table_of_contents_item a:active {
+I, [2017-01-22T16:46:01.955947 #23419]  INFO -- default-ubuntu-1404:     -    color: #000000;
+I, [2017-01-22T16:46:01.956117 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.956144 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.956159 #23419]  INFO -- default-ubuntu-1404:     -  div.table_of_contents_item a:hover {
+I, [2017-01-22T16:46:01.956396 #23419]  INFO -- default-ubuntu-1404:     -    background-color: #000000;
+I, [2017-01-22T16:46:01.956426 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.956588 #23419]  INFO -- default-ubuntu-1404:     -    color: #FFFFFF;
+I, [2017-01-22T16:46:01.956622 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.956643 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.956695 #23419]  INFO -- default-ubuntu-1404:     -  div.content_section_text a:link,
+I, [2017-01-22T16:46:01.956730 #23419]  INFO -- default-ubuntu-1404:     -  div.content_section_text a:visited,
+I, [2017-01-22T16:46:01.956759 #23419]  INFO -- default-ubuntu-1404:     -   div.content_section_text a:active {
+I, [2017-01-22T16:46:01.957059 #23419]  INFO -- default-ubuntu-1404:     -    background-color: #DCDFE6;
+I, [2017-01-22T16:46:01.957090 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.957210 #23419]  INFO -- default-ubuntu-1404:     -    color: #000000;
+I, [2017-01-22T16:46:01.957472 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.957588 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.957614 #23419]  INFO -- default-ubuntu-1404:     -  div.content_section_text a:hover {
+I, [2017-01-22T16:46:01.957630 #23419]  INFO -- default-ubuntu-1404:     -    background-color: #000000;
+I, [2017-01-22T16:46:01.957643 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.957656 #23419]  INFO -- default-ubuntu-1404:     -    color: #DCDFE6;
+I, [2017-01-22T16:46:01.957668 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.957868 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.957891 #23419]  INFO -- default-ubuntu-1404:     -  div.validator {
+I, [2017-01-22T16:46:01.957905 #23419]  INFO -- default-ubuntu-1404:     -  }
+I, [2017-01-22T16:46:01.957918 #23419]  INFO -- default-ubuntu-1404:     -    </style>
+I, [2017-01-22T16:46:01.958037 #23419]  INFO -- default-ubuntu-1404:     -  </head>
+I, [2017-01-22T16:46:01.958057 #23419]  INFO -- default-ubuntu-1404:     -  <body>
+I, [2017-01-22T16:46:01.958072 #23419]  INFO -- default-ubuntu-1404:     -    <div class="main_page">
+I, [2017-01-22T16:46:01.958086 #23419]  INFO -- default-ubuntu-1404:     -      <div class="page_header floating_element">
+I, [2017-01-22T16:46:01.958100 #23419]  INFO -- default-ubuntu-1404:     -        <img src="/icons/ubuntu-logo.png" alt="Ubuntu Logo" class="floating_element"/>
+I, [2017-01-22T16:46:01.958113 #23419]  INFO -- default-ubuntu-1404:     -        <span class="floating_element">
+I, [2017-01-22T16:46:01.958372 #23419]  INFO -- default-ubuntu-1404:     -          Apache2 Ubuntu Default Page
+I, [2017-01-22T16:46:01.958411 #23419]  INFO -- default-ubuntu-1404:     -        </span>
+I, [2017-01-22T16:46:01.958448 #23419]  INFO -- default-ubuntu-1404:     -      </div>
+I, [2017-01-22T16:46:01.958465 #23419]  INFO -- default-ubuntu-1404:     -<!--      <div class="table_of_contents floating_element">
+I, [2017-01-22T16:46:01.958478 #23419]  INFO -- default-ubuntu-1404:     -        <div class="section_header section_header_grey">
+I, [2017-01-22T16:46:01.958699 #23419]  INFO -- default-ubuntu-1404:     -          TABLE OF CONTENTS
+I, [2017-01-22T16:46:01.958723 #23419]  INFO -- default-ubuntu-1404:     -        </div>
+I, [2017-01-22T16:46:01.958782 #23419]  INFO -- default-ubuntu-1404:     -        <div class="table_of_contents_item floating_element">
+I, [2017-01-22T16:46:01.958805 #23419]  INFO -- default-ubuntu-1404:     -          <a href="#about">About</a>
+I, [2017-01-22T16:46:01.958818 #23419]  INFO -- default-ubuntu-1404:     -        </div>
+I, [2017-01-22T16:46:01.958831 #23419]  INFO -- default-ubuntu-1404:     -        <div class="table_of_contents_item floating_element">
+I, [2017-01-22T16:46:01.958844 #23419]  INFO -- default-ubuntu-1404:     -          <a href="#changes">Changes</a>
+I, [2017-01-22T16:46:01.959172 #23419]  INFO -- default-ubuntu-1404:     -        </div>
+I, [2017-01-22T16:46:01.959204 #23419]  INFO -- default-ubuntu-1404:     -        <div class="table_of_contents_item floating_element">
+I, [2017-01-22T16:46:01.959221 #23419]  INFO -- default-ubuntu-1404:     -          <a href="#scope">Scope</a>
+I, [2017-01-22T16:46:01.959235 #23419]  INFO -- default-ubuntu-1404:     -        </div>
+I, [2017-01-22T16:46:01.959420 #23419]  INFO -- default-ubuntu-1404:     -        <div class="table_of_contents_item floating_element">
+I, [2017-01-22T16:46:01.959675 #23419]  INFO -- default-ubuntu-1404:     -          <a href="#files">Config files</a>
+I, [2017-01-22T16:46:01.959710 #23419]  INFO -- default-ubuntu-1404:     -        </div>
+I, [2017-01-22T16:46:01.959728 #23419]  INFO -- default-ubuntu-1404:     -      </div>
+I, [2017-01-22T16:46:01.959741 #23419]  INFO -- default-ubuntu-1404:     --->
+I, [2017-01-22T16:46:01.959898 #23419]  INFO -- default-ubuntu-1404:     -      <div class="content_section floating_element">
+I, [2017-01-22T16:46:01.959949 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.959967 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.960186 #23419]  INFO -- default-ubuntu-1404:     -        <div class="section_header section_header_red">
+I, [2017-01-22T16:46:01.960211 #23419]  INFO -- default-ubuntu-1404:     -          <div id="about"></div>
+I, [2017-01-22T16:46:01.960226 #23419]  INFO -- default-ubuntu-1404:     -          It works!
+I, [2017-01-22T16:46:01.960239 #23419]  INFO -- default-ubuntu-1404:     -        </div>
+I, [2017-01-22T16:46:01.960410 #23419]  INFO -- default-ubuntu-1404:     -        <div class="content_section_text">
+I, [2017-01-22T16:46:01.960439 #23419]  INFO -- default-ubuntu-1404:     -          <p>
+I, [2017-01-22T16:46:01.960457 #23419]  INFO -- default-ubuntu-1404:     -                This is the default welcome page used to test the correct 
+I, [2017-01-22T16:46:01.960624 #23419]  INFO -- default-ubuntu-1404:     -                operation of the Apache2 server after installation on Ubuntu systems.
+I, [2017-01-22T16:46:01.960648 #23419]  INFO -- default-ubuntu-1404:     -                It is based on the equivalent page on Debian, from which the Ubuntu Apache
+I, [2017-01-22T16:46:01.960663 #23419]  INFO -- default-ubuntu-1404:     -                packaging is derived.
+I, [2017-01-22T16:46:01.960678 #23419]  INFO -- default-ubuntu-1404:     -                If you can read this page, it means that the Apache HTTP server installed at
+I, [2017-01-22T16:46:01.960701 #23419]  INFO -- default-ubuntu-1404:     -                this site is working properly. You should <b>replace this file</b> (located at
+I, [2017-01-22T16:46:01.960722 #23419]  INFO -- default-ubuntu-1404:     -                <tt>/var/www/html/index.html</tt>) before continuing to operate your HTTP server.
+I, [2017-01-22T16:46:01.960741 #23419]  INFO -- default-ubuntu-1404:     -          </p>
+I, [2017-01-22T16:46:01.960948 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.960975 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.960990 #23419]  INFO -- default-ubuntu-1404:     -          <p>
+I, [2017-01-22T16:46:01.961063 #23419]  INFO -- default-ubuntu-1404:     -                If you are a normal user of this web site and don't know what this page is
+I, [2017-01-22T16:46:01.961084 #23419]  INFO -- default-ubuntu-1404:     -                about, this probably means that the site is currently unavailable due to
+I, [2017-01-22T16:46:01.961110 #23419]  INFO -- default-ubuntu-1404:     -                maintenance.
+I, [2017-01-22T16:46:01.961125 #23419]  INFO -- default-ubuntu-1404:     -                If the problem persists, please contact the site's administrator.
+I, [2017-01-22T16:46:01.961328 #23419]  INFO -- default-ubuntu-1404:     -          </p>
+I, [2017-01-22T16:46:01.961380 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.961402 #23419]  INFO -- default-ubuntu-1404:     -        </div>
+I, [2017-01-22T16:46:01.961416 #23419]  INFO -- default-ubuntu-1404:     -        <div class="section_header">
+I, [2017-01-22T16:46:01.961429 #23419]  INFO -- default-ubuntu-1404:     -          <div id="changes"></div>
+I, [2017-01-22T16:46:01.961441 #23419]  INFO -- default-ubuntu-1404:     -                Configuration Overview
+I, [2017-01-22T16:46:01.961453 #23419]  INFO -- default-ubuntu-1404:     -        </div>
+I, [2017-01-22T16:46:01.961777 #23419]  INFO -- default-ubuntu-1404:     -        <div class="content_section_text">
+I, [2017-01-22T16:46:01.961806 #23419]  INFO -- default-ubuntu-1404:     -          <p>
+I, [2017-01-22T16:46:01.961830 #23419]  INFO -- default-ubuntu-1404:     -                Ubuntu's Apache2 default configuration is different from the
+I, [2017-01-22T16:46:01.961852 #23419]  INFO -- default-ubuntu-1404:     -                upstream default configuration, and split into several files optimized for
+I, [2017-01-22T16:46:01.961866 #23419]  INFO -- default-ubuntu-1404:     -                interaction with Ubuntu tools. The configuration system is
+I, [2017-01-22T16:46:01.961879 #23419]  INFO -- default-ubuntu-1404:     -                <b>fully documented in
+I, [2017-01-22T16:46:01.961892 #23419]  INFO -- default-ubuntu-1404:     -                /usr/share/doc/apache2/README.Debian.gz</b>. Refer to this for the full
+I, [2017-01-22T16:46:01.962154 #23419]  INFO -- default-ubuntu-1404:     -                documentation. Documentation for the web server itself can be
+I, [2017-01-22T16:46:01.962185 #23419]  INFO -- default-ubuntu-1404:     -                found by accessing the <a href="/manual">manual</a> if the <tt>apache2-doc</tt>
+I, [2017-01-22T16:46:01.962201 #23419]  INFO -- default-ubuntu-1404:     -                package was installed on this server.
+I, [2017-01-22T16:46:01.962214 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.962399 #23419]  INFO -- default-ubuntu-1404:     -          </p>
+I, [2017-01-22T16:46:01.962423 #23419]  INFO -- default-ubuntu-1404:     -          <p>
+I, [2017-01-22T16:46:01.962439 #23419]  INFO -- default-ubuntu-1404:     -                The configuration layout for an Apache2 web server installation on Ubuntu systems is as follows:
+I, [2017-01-22T16:46:01.962487 #23419]  INFO -- default-ubuntu-1404:     -          </p>
+I, [2017-01-22T16:46:01.962665 #23419]  INFO -- default-ubuntu-1404:     -          <pre>
+I, [2017-01-22T16:46:01.962697 #23419]  INFO -- default-ubuntu-1404:     -/etc/apache2/
+I, [2017-01-22T16:46:01.962724 #23419]  INFO -- default-ubuntu-1404:     -|-- apache2.conf
+I, [2017-01-22T16:46:01.962746 #23419]  INFO -- default-ubuntu-1404:     -|       `--  ports.conf
+I, [2017-01-22T16:46:01.962770 #23419]  INFO -- default-ubuntu-1404:     -|-- mods-enabled
+I, [2017-01-22T16:46:01.962952 #23419]  INFO -- default-ubuntu-1404:     -|       |-- *.load
+I, [2017-01-22T16:46:01.962973 #23419]  INFO -- default-ubuntu-1404:     -|       `-- *.conf
+I, [2017-01-22T16:46:01.962987 #23419]  INFO -- default-ubuntu-1404:     -|-- conf-enabled
+I, [2017-01-22T16:46:01.962999 #23419]  INFO -- default-ubuntu-1404:     -|       `-- *.conf
+I, [2017-01-22T16:46:01.963010 #23419]  INFO -- default-ubuntu-1404:     -|-- sites-enabled
+I, [2017-01-22T16:46:01.963022 #23419]  INFO -- default-ubuntu-1404:     -|       `-- *.conf
+I, [2017-01-22T16:46:01.963033 #23419]  INFO -- default-ubuntu-1404:     -          </pre>
+I, [2017-01-22T16:46:01.963270 #23419]  INFO -- default-ubuntu-1404:     -          <ul>
+I, [2017-01-22T16:46:01.963304 #23419]  INFO -- default-ubuntu-1404:     -                        <li>
+I, [2017-01-22T16:46:01.963470 #23419]  INFO -- default-ubuntu-1404:     -                           <tt>apache2.conf</tt> is the main configuration
+I, [2017-01-22T16:46:01.963493 #23419]  INFO -- default-ubuntu-1404:     -                           file. It puts the pieces together by including all remaining configuration
+I, [2017-01-22T16:46:01.963509 #23419]  INFO -- default-ubuntu-1404:     -                           files when starting up the web server.
+I, [2017-01-22T16:46:01.963522 #23419]  INFO -- default-ubuntu-1404:     -                        </li>
+I, [2017-01-22T16:46:01.963534 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.963546 #23419]  INFO -- default-ubuntu-1404:     -                        <li>
+I, [2017-01-22T16:46:01.963755 #23419]  INFO -- default-ubuntu-1404:     -                           <tt>ports.conf</tt> is always included from the
+I, [2017-01-22T16:46:01.964010 #23419]  INFO -- default-ubuntu-1404:     -                           main configuration file. It is used to determine the listening ports for
+I, [2017-01-22T16:46:01.964040 #23419]  INFO -- default-ubuntu-1404:     -                           incoming connections, and this file can be customized anytime.
+I, [2017-01-22T16:46:01.964293 #23419]  INFO -- default-ubuntu-1404:     -                        </li>
+I, [2017-01-22T16:46:01.964479 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.964514 #23419]  INFO -- default-ubuntu-1404:     -                        <li>
+I, [2017-01-22T16:46:01.964531 #23419]  INFO -- default-ubuntu-1404:     -                           Configuration files in the <tt>mods-enabled/</tt>,
+I, [2017-01-22T16:46:01.964547 #23419]  INFO -- default-ubuntu-1404:     -                           <tt>conf-enabled/</tt> and <tt>sites-enabled/</tt> directories contain
+I, [2017-01-22T16:46:01.964563 #23419]  INFO -- default-ubuntu-1404:     -                           particular configuration snippets which manage modules, global configuration
+I, [2017-01-22T16:46:01.964577 #23419]  INFO -- default-ubuntu-1404:     -                           fragments, or virtual host configurations, respectively.
+I, [2017-01-22T16:46:01.964818 #23419]  INFO -- default-ubuntu-1404:     -                        </li>
+I, [2017-01-22T16:46:01.964849 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.964868 #23419]  INFO -- default-ubuntu-1404:     -                        <li>
+I, [2017-01-22T16:46:01.965079 #23419]  INFO -- default-ubuntu-1404:     -                           They are activated by symlinking available
+I, [2017-01-22T16:46:01.965106 #23419]  INFO -- default-ubuntu-1404:     -                           configuration files from their respective
+I, [2017-01-22T16:46:01.965123 #23419]  INFO -- default-ubuntu-1404:     -                           *-available/ counterparts. These should be managed
+I, [2017-01-22T16:46:01.965138 #23419]  INFO -- default-ubuntu-1404:     -                           by using our helpers
+I, [2017-01-22T16:46:01.965152 #23419]  INFO -- default-ubuntu-1404:     -                           <tt>
+I, [2017-01-22T16:46:01.965166 #23419]  INFO -- default-ubuntu-1404:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2enmod">a2enmod</a>,
+I, [2017-01-22T16:46:01.965421 #23419]  INFO -- default-ubuntu-1404:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2dismod">a2dismod</a>,
+I, [2017-01-22T16:46:01.965449 #23419]  INFO -- default-ubuntu-1404:     -                           </tt>
+I, [2017-01-22T16:46:01.965466 #23419]  INFO -- default-ubuntu-1404:     -                           <tt>
+I, [2017-01-22T16:46:01.965480 #23419]  INFO -- default-ubuntu-1404:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2ensite">a2ensite</a>,
+I, [2017-01-22T16:46:01.965680 #23419]  INFO -- default-ubuntu-1404:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2dissite">a2dissite</a>,
+I, [2017-01-22T16:46:01.965715 #23419]  INFO -- default-ubuntu-1404:     -                            </tt>
+I, [2017-01-22T16:46:01.965730 #23419]  INFO -- default-ubuntu-1404:     -                                and
+I, [2017-01-22T16:46:01.965744 #23419]  INFO -- default-ubuntu-1404:     -                           <tt>
+I, [2017-01-22T16:46:01.965768 #23419]  INFO -- default-ubuntu-1404:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2enconf">a2enconf</a>,
+I, [2017-01-22T16:46:01.965978 #23419]  INFO -- default-ubuntu-1404:     -                                <a href="http://manpages.debian.org/cgi-bin/man.cgi?query=a2disconf">a2disconf</a>
+I, [2017-01-22T16:46:01.966003 #23419]  INFO -- default-ubuntu-1404:     -                           </tt>. See their respective man pages for detailed information.
+I, [2017-01-22T16:46:01.966019 #23419]  INFO -- default-ubuntu-1404:     -                        </li>
+I, [2017-01-22T16:46:01.966032 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.966181 #23419]  INFO -- default-ubuntu-1404:     -                        <li>
+I, [2017-01-22T16:46:01.966205 #23419]  INFO -- default-ubuntu-1404:     -                           The binary is called apache2. Due to the use of
+I, [2017-01-22T16:46:01.966221 #23419]  INFO -- default-ubuntu-1404:     -                           environment variables, in the default configuration, apache2 needs to be
+I, [2017-01-22T16:46:01.966235 #23419]  INFO -- default-ubuntu-1404:     -                           started/stopped with <tt>/etc/init.d/apache2</tt> or <tt>apache2ctl</tt>.
+I, [2017-01-22T16:46:01.966450 #23419]  INFO -- default-ubuntu-1404:     -                           <b>Calling <tt>/usr/bin/apache2</tt> directly will not work</b> with the
+I, [2017-01-22T16:46:01.966474 #23419]  INFO -- default-ubuntu-1404:     -                           default configuration.
+I, [2017-01-22T16:46:01.966596 #23419]  INFO -- default-ubuntu-1404:     -                        </li>
+I, [2017-01-22T16:46:01.966620 #23419]  INFO -- default-ubuntu-1404:     -          </ul>
+I, [2017-01-22T16:46:01.966634 #23419]  INFO -- default-ubuntu-1404:     -        </div>
+I, [2017-01-22T16:46:01.966840 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.966865 #23419]  INFO -- default-ubuntu-1404:     -        <div class="section_header">
+I, [2017-01-22T16:46:01.966881 #23419]  INFO -- default-ubuntu-1404:     -            <div id="docroot"></div>
+I, [2017-01-22T16:46:01.966894 #23419]  INFO -- default-ubuntu-1404:     -                Document Roots
+I, [2017-01-22T16:46:01.966907 #23419]  INFO -- default-ubuntu-1404:     -        </div>
+I, [2017-01-22T16:46:01.967040 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.967073 #23419]  INFO -- default-ubuntu-1404:     -        <div class="content_section_text">
+I, [2017-01-22T16:46:01.967100 #23419]  INFO -- default-ubuntu-1404:     -            <p>
+I, [2017-01-22T16:46:01.967288 #23419]  INFO -- default-ubuntu-1404:     -                By default, Ubuntu does not allow access through the web browser to
+I, [2017-01-22T16:46:01.967317 #23419]  INFO -- default-ubuntu-1404:     -                <em>any</em> file apart of those located in <tt>/var/www</tt>,
+I, [2017-01-22T16:46:01.967334 #23419]  INFO -- default-ubuntu-1404:     -                <a href="http://httpd.apache.org/docs/2.4/mod/mod_userdir.html">public_html</a>
+I, [2017-01-22T16:46:01.967348 #23419]  INFO -- default-ubuntu-1404:     -                directories (when enabled) and <tt>/usr/share</tt> (for web
+I, [2017-01-22T16:46:01.967474 #23419]  INFO -- default-ubuntu-1404:     -                applications). If your site is using a web document root
+I, [2017-01-22T16:46:01.967501 #23419]  INFO -- default-ubuntu-1404:     -                located elsewhere (such as in <tt>/srv</tt>) you may need to whitelist your
+I, [2017-01-22T16:46:01.967547 #23419]  INFO -- default-ubuntu-1404:     -                document root directory in <tt>/etc/apache2/apache2.conf</tt>.
+I, [2017-01-22T16:46:01.967567 #23419]  INFO -- default-ubuntu-1404:     -            </p>
+I, [2017-01-22T16:46:01.967742 #23419]  INFO -- default-ubuntu-1404:     -            <p>
+I, [2017-01-22T16:46:01.967772 #23419]  INFO -- default-ubuntu-1404:     -                The default Ubuntu document root is <tt>/var/www/html</tt>. You
+I, [2017-01-22T16:46:01.967800 #23419]  INFO -- default-ubuntu-1404:     -                can make your own virtual hosts under /var/www. This is different
+I, [2017-01-22T16:46:01.967816 #23419]  INFO -- default-ubuntu-1404:     -                to previous releases which provides better security out of the box.
+I, [2017-01-22T16:46:01.967829 #23419]  INFO -- default-ubuntu-1404:     -            </p>
+I, [2017-01-22T16:46:01.968033 #23419]  INFO -- default-ubuntu-1404:     -        </div>
+I, [2017-01-22T16:46:01.968065 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.968082 #23419]  INFO -- default-ubuntu-1404:     -        <div class="section_header">
+I, [2017-01-22T16:46:01.968096 #23419]  INFO -- default-ubuntu-1404:     -          <div id="bugs"></div>
+I, [2017-01-22T16:46:01.968237 #23419]  INFO -- default-ubuntu-1404:     -                Reporting Problems
+I, [2017-01-22T16:46:01.968266 #23419]  INFO -- default-ubuntu-1404:     -        </div>
+I, [2017-01-22T16:46:01.968281 #23419]  INFO -- default-ubuntu-1404:     -        <div class="content_section_text">
+I, [2017-01-22T16:46:01.968445 #23419]  INFO -- default-ubuntu-1404:     -          <p>
+I, [2017-01-22T16:46:01.968479 #23419]  INFO -- default-ubuntu-1404:     -                Please use the <tt>ubuntu-bug</tt> tool to report bugs in the
+I, [2017-01-22T16:46:01.968510 #23419]  INFO -- default-ubuntu-1404:     -                Apache2 package with Ubuntu. However, check <a
+I, [2017-01-22T16:46:01.968531 #23419]  INFO -- default-ubuntu-1404:     -                href="https://bugs.launchpad.net/ubuntu/+source/apache2">existing
+I, [2017-01-22T16:46:01.970030 #23419]  INFO -- default-ubuntu-1404:     -                bug reports</a> before reporting a new bug.
+I, [2017-01-22T16:46:01.970074 #23419]  INFO -- default-ubuntu-1404:     -          </p>
+I, [2017-01-22T16:46:01.970100 #23419]  INFO -- default-ubuntu-1404:     -          <p>
+I, [2017-01-22T16:46:01.970123 #23419]  INFO -- default-ubuntu-1404:     -                Please report bugs specific to modules (such as PHP and others)
+I, [2017-01-22T16:46:01.970382 #23419]  INFO -- default-ubuntu-1404:     -                to respective packages, not to the web server itself.
+I, [2017-01-22T16:46:01.970415 #23419]  INFO -- default-ubuntu-1404:     -          </p>
+I, [2017-01-22T16:46:01.970438 #23419]  INFO -- default-ubuntu-1404:     -        </div>
+I, [2017-01-22T16:46:01.970582 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.970611 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.970633 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.970652 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.970873 #23419]  INFO -- default-ubuntu-1404:     -      </div>
+I, [2017-01-22T16:46:01.970903 #23419]  INFO -- default-ubuntu-1404:     -    </div>
+I, [2017-01-22T16:46:01.970926 #23419]  INFO -- default-ubuntu-1404:     -    <div class="validator">
+I, [2017-01-22T16:46:01.970947 #23419]  INFO -- default-ubuntu-1404:     -    <p>
+I, [2017-01-22T16:46:01.970968 #23419]  INFO -- default-ubuntu-1404:     -      <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+I, [2017-01-22T16:46:01.971138 #23419]  INFO -- default-ubuntu-1404:     -    </p>
+I, [2017-01-22T16:46:01.971166 #23419]  INFO -- default-ubuntu-1404:     -    </div>
+I, [2017-01-22T16:46:01.971188 #23419]  INFO -- default-ubuntu-1404:     -  </body>
+I, [2017-01-22T16:46:01.971225 #23419]  INFO -- default-ubuntu-1404:     +<html>
+I, [2017-01-22T16:46:01.971248 #23419]  INFO -- default-ubuntu-1404:     +    <h1>
+I, [2017-01-22T16:46:01.971268 #23419]  INFO -- default-ubuntu-1404:     +        <body>
+I, [2017-01-22T16:46:01.971289 #23419]  INFO -- default-ubuntu-1404:     +            <h1>Hello World! This is a template on default-ubuntu-1404</h1>
+I, [2017-01-22T16:46:01.971388 #23419]  INFO -- default-ubuntu-1404:     +        </body>
+I, [2017-01-22T16:46:01.971408 #23419]  INFO -- default-ubuntu-1404:     +    </h1>
+I, [2017-01-22T16:46:01.972352 #23419]  INFO -- default-ubuntu-1404:      </html>
+I, [2017-01-22T16:46:01.974272 #23419]  INFO -- default-ubuntu-1404:     -
+I, [2017-01-22T16:46:01.974615 #23419]  INFO -- default-ubuntu-1404:     - change owner from 'root' to 'web_admin'
+I, [2017-01-22T16:46:01.975458 #23419]  INFO -- default-ubuntu-1404:     - change group from 'root' to 'web_admin'
+I, [2017-01-22T16:46:02.002421 #23419]  INFO -- default-ubuntu-1404: 
+I, [2017-01-22T16:46:02.002918 #23419]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2017-01-22T16:46:02.003314 #23419]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2017-01-22T16:46:02.003844 #23419]  INFO -- default-ubuntu-1404: Chef Client finished, 6/11 resources updated in 21 seconds
+I, [2017-01-22T16:46:02.083111 #23419]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (0m32.17s).
+I, [2017-01-22T16:46:02.084958 #23419]  INFO -- default-ubuntu-1404: -----> Setting up <default-ubuntu-1404>...
+I, [2017-01-22T16:46:02.090471 #23419]  INFO -- default-ubuntu-1404: Finished setting up <default-ubuntu-1404> (0m0.00s).
+I, [2017-01-22T16:46:02.090623 #23419]  INFO -- default-ubuntu-1404: -----> Verifying <default-ubuntu-1404>...
+I, [2017-01-22T16:46:02.450182 #23419]  INFO -- default-ubuntu-1404: Loaded  
+I, [2017-01-22T16:46:02.641069 #23419]  INFO -- default-ubuntu-1404: Finished verifying <default-ubuntu-1404> (0m0.54s).
+I, [2017-01-22T16:46:02.641709 #23419]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+I, [2017-01-22T16:46:05.533975 #23419]  INFO -- default-ubuntu-1404: ==> default: Forcing shutdown of VM...
+I, [2017-01-22T16:46:07.219280 #23419]  INFO -- default-ubuntu-1404: ==> default: Destroying VM and associated drives...
+I, [2017-01-22T16:46:07.488605 #23419]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> destroyed.
+I, [2017-01-22T16:46:07.490080 #23419]  INFO -- default-ubuntu-1404: Finished destroying <default-ubuntu-1404> (0m4.85s).
+I, [2017-01-22T16:46:07.492122 #23419]  INFO -- default-ubuntu-1404: Finished testing <default-ubuntu-1404> (1m14.53s).

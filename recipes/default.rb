@@ -9,21 +9,19 @@ apt_update 'Update the apt cache daily' do
     action :periodic
 end
 
-case node['platform_family'] 
-when 'debian'
-    package 'apache2'
+package_name = 
+    service_name = 
+        case node['platform_family']
+            when 'rhel' then 'httpd'
+            when 'debian' then 'apache2'
+        end
 
-    service 'apache2' do
-        supports :status => true
-        action [:enable, :start]
-    end
-when 'rhel'
-    package 'httpd'
+#Installs 
+package package_name
 
-    service 'httpd' do
-        supports :status => true
-        action [:enable, :start]
-    end
+service service_name do
+    supports :status => true
+    action [:enable, :start]
 end
 
 group 'web_admin'
